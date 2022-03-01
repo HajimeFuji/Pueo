@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pueo refle</title>
+    
+        <!-- webフォント -->
+        <link rel="stylesheet" href="https://use.typekit.net/zij1yya.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+        <!-- FontAwesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- aos.css -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!-- vegas.css -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vegas@2.5.4/dist/vegas.min.css">
+        <!-- drawer.css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css">
+    
+    
+        <link rel="stylesheet" href="./css/style.css">
+        <!-- jQuery ※scriptを使う -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+        <!-- aos.js -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <!-- vegas.js -->
+        <script src="https://cdn.jsdelivr.net/npm/vegas@2.5.4/dist/vegas.min.js"></script>
+        <!-- iScroll.js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+        <!-- drawer.js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
+    
+        <script src="./js/common.js"></script>
+        
+        <!-- import vue.js -->
+        <script src="https://unpkg.com/vue@next"></script>
+
+    </head>
+<body class="drawer drawer--right">
+    <div id="app">
+        <div class="page-wrap" :class="{active: classDark}">
+            <header>
+                <div class="sp-header">
+                    <h1>
+                        <a href="index.html"><img src="./img_for_Pueo/Pueo_logo_yoko.png" alt="" class="sp-header__logo"></a>
+                    </h1>
+                    <div class="hamburger drawer-toggle drawer-hamburger">
+                        <span class="drawer-hamburger-icon"></span>
+                    </div>
+                    <nav class="drawer-nav" role="navigation">
+                        <ul class="drawer-menu">
+                            <!-- <li><a class="drawer-menu-item" href="index.html#products">Products</a></li> -->
+                            <li><a class="drawer-menu-item" href="index.html#recommend">Service Menu</a></li>
+                            <li><a class="drawer-menu-item" href="index.html#concept">Concept</a></li>
+                            <li><a class="drawer-menu-item" href="index.html#news">News</a></li>
+                            <li><a class="drawer-menu-item" href="contact.html">Contact</a></li>
+                        </ul>
+                        <div class="sns-link">
+                            <a href="" class="sns-link__icon sns-link__icon--primary"><i class="fab fa-instagram"></i></a>
+                            <a href="" class="sns-link__icon sns-link__icon--primary"><i class="fab fa-twitter"></i></a>
+                            <a href="" class="sns-link__icon sns-link__icon--primary"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+
+            <main>
+                <article>
+                    <div class="eachProduct">
+                        <div class="eachProduct-wrap">
+                            <div class="eachProduct-imginfo">
+                                <img src="./img_for_Pueo/head_3.jpg" alt="" class="eachProduct__img">
+                                <div class="eachProduct-content">
+                                    <!-- <span class="eachProduct-content__code">{{ id }}</span> -->
+                                    <h4 class="eachProduct-content__title" :class="{light: classDark}">スタンダードリフレ(約50分)</h4>
+                                    <span class="eachProduct-content__price" :class="{light: classDark}">￥4,400<span class="eachProduct-content__price-sub">(税込)</span></span>
+                                    <!-- <div class="eachProduct-content__spec">
+                                        <div class="eachProduct-color">
+                                            <p class="eachProduct-color-p">カラー</p>
+                                            <div class="eachProduct-color-link">
+                                                <div class="color-circle color-circle--green" @click="toggleGreen"></div>
+                                                <div class="color-circle color-circle--blue" @click="toggleBlue"></div>
+                                                <div class="color-circle color-circle--brown" @click="toggleBrown"></div>
+                                            </div>
+                                        </div>
+                                        <p class="eachProduct-content__size" :class="{light: classDark}">サイズ　幅192 × 奥行80 × 高さ90 cm</p>
+                                    </div>
+                                    <div class="bottom-line"></div> -->
+                                    <p class="eachProduct-content__text" :class="{light: classDark}">季節の変わり目は自律神経が乱れやすい時期です。<br>
+                                        自律神経は全身の臓器を制御して体温調節・消化・血液循環などの<br class="mobile-none">
+                                        活動をコントロールする体の司令塔です。<br class="mobile-none">
+                                        > 交感神経: 身体をアクティブにする役割<br class="mobile-none">
+                                        > 副交感神経: 身体をリラックスさせる役割<br class="mobile-none">
+                                        足裏の反射区、ふくらはぎを優しく刺激することにより血液循環を促し、<br class="mobile-none">
+                                        自然治癒力を呼び覚まします。ゆったりした時間を過ごすことで<br class="mobile-none">
+                                        施術後は“副交感神経”が優位になり、自律神経が整えられます。
+                                    </p>
+
+                                </div>
+                            </div>
+                            <a href="contact.html" class="btn  btn--primary" :class="{btnDark: classDark}">お問い合わせ</a>                       
+                        </div>
+                    </div>
+                </article>
+            </main>
+            <header>
+                <div class="header">
+                    <h1 class="header__logo">
+                        <a href="index.html"><img src="./img_for_Pueo/Pueo_logo.svg" alt="WOODEN STUDIOのロゴ"></a>
+                    </h1>
+                    <nav>
+                        <ul class="header-nav">
+                            <li v-if="iconChange" @click="toggleDark" class="header-nav__link"><i class="fas fa-moon"></i></li>
+                            <li v-else @click="toggleDark" class="header-nav__link"><i class="fas fa-sun"></i></li>
+                            <!-- (li.header-nav__link>a)*5 -->
+                            <!-- <li class="header-nav__link"><a href="index.html#products">Products</a></li> -->
+                            <li class="header-nav__link"><a href="index.html#recommend">Service Menu</a></li>
+                            <li class="header-nav__link"><a href="index.html#concept">Concept</a></li>
+                            <li class="header-nav__link"><a href="index.html#news">News</a></li>
+                            <li class="header-nav__link"><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <div class="sns-link">
+                        <a href="" class="sns-link__icon sns-link__icon--primary"><i class="fab fa-instagram"></i></a>
+                        <a href="" class="sns-link__icon sns-link__icon--primary"><i class="fab fa-twitter"></i></a>
+                        <a href="" class="sns-link__icon sns-link__icon--primary"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </header>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <h1 class="footer__logo">Pueo</h1>
+            <nav>
+                <ul class="footer-nav">
+                    <!-- <li class="footer-nav__link"><a href="index.html#products">Products</a></li> -->
+                    <li class="footer-nav__link"><a href="index.html#recommend">Menu</a></li>
+                    <li class="footer-nav__link"><a href="index.html#concept">Concept</a></li>
+                    <li class="footer-nav__link"><a href="index.html#news">News</a></li>
+                </ul>
+            </nav>
+            <div class="footer-contact">
+                <div class="footer-mail">
+                    <i class="footer-mail__icon far fa-envelope"></i>
+                    <a href="contact.html" class="footer-mail__link">Contact</a>
+                </div>
+                <div class="sns-link">
+                    <a href="" class="sns-link__icon"><i class="fab fa-instagram"></i></a>
+                    <a href="" class="sns-link__icon"><i class="fab fa-twitter"></i></a>
+                    <a href="" class="sns-link__icon"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+            <div class="information">
+                <p class="information__text">北海道江別市大麻 自宅サロン</p>
+                <p>TEL: 090-9439-5387</p>
+                <p class="information__text">完全予約制 平日OPEN（不定休）</p>
+            </div>
+            <div class="copyrights">
+                Copyright ©︎ Pueo All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+
+</body>
+</html>
