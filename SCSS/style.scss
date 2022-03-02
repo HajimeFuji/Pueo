@@ -170,7 +170,7 @@
             }
         }
         &-wrap {
-            background-color: $sub;
+            background-color: cadetblue;
             // boxの左下に張り付け
             position: absolute;
             bottom: 0;
@@ -206,6 +206,12 @@
             color: $white;
             font-family: $sans;
             line-height: 2;
+
+            &__bold {
+                color: brown;
+                font-family: $sans;
+                line-height: 2;
+            }
             @include mq(sp){
                 line-height: 1.8;
             }

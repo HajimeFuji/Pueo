@@ -899,7 +899,7 @@ li {
   }
 }
 .concept1-wrap {
-  background-color: #6F6142;
+  background-color: cadetblue;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -934,6 +934,11 @@ li {
 }
 .concept1__text {
   color: #FFFFFF;
+  font-family: "Noto sans JP";
+  line-height: 2;
+}
+.concept1__text__bold {
+  color: brown;
   font-family: "Noto sans JP";
   line-height: 2;
 }
