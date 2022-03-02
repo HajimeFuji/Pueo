@@ -61,7 +61,7 @@
         margin: 54px auto 0;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-around;
         row-gap: 36px;
         @include mq(sp){
             max-width: initial;
@@ -84,8 +84,8 @@
         }
 
         &__img {
-            height: 200px;
-            width: 300px;
+            height: 300px;
+            width: 450px;
             display: inline-block;
             // アクションをゆっくり
             transition: all .8s ease;
@@ -144,7 +144,7 @@
         height: 450px;
         // 画像360px + 下のスペース 90px
         margin-bottom: 90px;
-        // COncept2 との間隔 90px
+        // Concept2 との間隔 90px
 
         @include mq(sp){
             position: initial;
@@ -175,7 +175,7 @@
             position: absolute;
             bottom: 0;
             left: 0;
-            height: 360px;
+            height: 400px;
             width: 920px;
             padding: 70px 56px;
             // 重なる順番下

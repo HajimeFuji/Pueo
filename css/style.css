@@ -801,7 +801,7 @@ li {
   margin: 54px auto 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   row-gap: 36px;
 }
 @media screen and (max-width:599px) {
@@ -820,8 +820,8 @@ li {
   overflow: hidden;
 }
 .recommend-content__img {
-  height: 200px;
-  width: 300px;
+  height: 300px;
+  width: 450px;
   display: inline-block;
   transition: all 0.8s ease;
 }
@@ -903,7 +903,7 @@ li {
   position: absolute;
   bottom: 0;
   left: 0;
-  height: 360px;
+  height: 400px;
   width: 920px;
   padding: 70px 56px;
   z-index: -1;

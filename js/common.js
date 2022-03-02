@@ -12,7 +12,7 @@ $(function () {
         animationDuration: 10000,
     slides: [
         { src: "./img_for_Pueo/relax_3.jpg" },
-        { src: "./img_for_Pueo/hawaii_beach_3.jpg" },
+        { src: "./img_for_Pueo/plumeria.jpg" },
         { src: "./img_for_Pueo/relax_1.jpg" },
         ]
     });
