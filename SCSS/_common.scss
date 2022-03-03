@@ -35,6 +35,18 @@ li {
     list-style: none;
 }
 
+@include mq(tab) {
+    h3 {
+        font-size: 22px;
+    }
+    p {
+        font-size: 14px;
+    }
+    h3.tab-none{
+        display: none;
+    }
+}
+
 @include mq(sp){
     h2 {
         font-size: 24px;

@@ -139,7 +139,7 @@
     }
 
     .section-headline {
-        @include mq(sp){
+        @include mq(tab){
             margin-left: 20px;
         }
     }
@@ -185,6 +185,13 @@
             padding: 70px 56px;
             // 重なる順番下
             z-index: -1;
+
+            @include mq(tab) {
+                padding: 50px 30px;
+                height: 360px;
+                width: 700px;
+            }
+
             @include mq(sp){
                 background-color: initial;
                 position: initial;
@@ -243,6 +250,9 @@
             top: 50%;
             left: 428px;
             transform: translateY(-50%);
+            @include mq(tab) {
+                left: 300px;
+            }
             @include mq(sp){
                 position: initial;
                 top: initial;
@@ -256,6 +266,10 @@
         &__headline {
             font-weight: bold;
             margin-bottom: 28px;
+
+            @include mq(tab) {
+                margin-bottom: 20px;
+            }
 
             @include mq(sp){
                 font-family: $serif;
