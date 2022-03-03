@@ -668,7 +668,7 @@ li {
   list-style: none;
 }
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width:1050px) {
   h3 {
     font-size: 22px;
   }
@@ -677,7 +677,7 @@ li {
     font-size: 14px;
   }
 
-  h3.tab-none {
+  .tab-none {
     display: none;
   }
 }
@@ -778,7 +778,7 @@ li {
   width: calc(100vw - 160px);
   margin-bottom: 288px;
 }
-@media screen and (max-width:1024px) {
+@media screen and (max-width:1050px) {
   .main-visual {
     height: 80vh;
     width: 100%;
@@ -824,7 +824,7 @@ li {
   justify-content: space-around;
   row-gap: 36px;
 }
-@media screen and (max-width:1024px) {
+@media screen and (max-width:1050px) {
   .recommend-wrap {
     max-width: initial;
     margin: 32px auto 0;
@@ -883,7 +883,7 @@ li {
     max-width: initial;
   }
 }
-@media screen and (max-width:1024px) {
+@media screen and (max-width:1050px) {
   .concept .section-headline {
     margin-left: 20px;
   }
@@ -893,7 +893,7 @@ li {
   height: 450px;
   margin-bottom: 90px;
 }
-@media screen and (max-width:1024px) {
+@media screen and (max-width:1050px) {
   .concept1 {
     height: 350px;
   }
@@ -933,7 +933,7 @@ li {
   padding: 45px 56px;
   z-index: -1;
 }
-@media screen and (max-width:1024px) {
+@media screen and (max-width:1050px) {
   .concept1-wrap {
     padding: 20px 30px;
     height: 300px;
@@ -958,7 +958,7 @@ li {
   font-weight: bold;
   margin-bottom: 28px;
 }
-@media screen and (max-width:1024px) {
+@media screen and (max-width:1050px) {
   .concept1__headline {
     margin-bottom: 20px;
   }
@@ -1008,9 +1008,9 @@ li {
   left: 428px;
   transform: translateY(-50%);
 }
-@media screen and (max-width:1024px) {
+@media screen and (max-width:1050px) {
   .concept2-wrap {
-    left: 300px;
+    left: 340px;
   }
 }
 @media screen and (max-width:599px) {
@@ -1027,7 +1027,7 @@ li {
   font-weight: bold;
   margin-bottom: 28px;
 }
-@media screen and (max-width:1024px) {
+@media screen and (max-width:1050px) {
   .concept2__headline {
     margin-bottom: 20px;
   }
@@ -1123,7 +1123,7 @@ li {
   max-width: 1080px;
   margin: 0 auto;
 }
-@media screen and (max-width:1024px) {
+@media screen and (max-width:1050px) {
   .contact {
     max-width: 800px;
   }
@@ -1139,7 +1139,7 @@ li {
   height: 468px;
   position: relative;
 }
-@media screen and (max-width:1024px) {
+@media screen and (max-width:1050px) {
   .contact-wrap {
     height: 360px;
   }
@@ -1160,7 +1160,7 @@ li {
   left: calc(50% + 63px);
   z-index: -1;
 }
-@media screen and (max-width:1024px) {
+@media screen and (max-width:1050px) {
   .contact-wrap::after {
     height: 300px;
   }
@@ -1235,7 +1235,7 @@ li {
 .section {
   margin-bottom: 288px;
 }
-@media screen and (max-width:1024px) {
+@media screen and (max-width:1050px) {
   .section {
     margin-bottom: 150px;
   }
