@@ -1039,7 +1039,7 @@ li {
 }
 
 .news {
-  background: url(../img/newsBackground.jpg) center center no-repeat;
+  background: url(../img_for_Pueo/hawaii_beach_background.jpg) center center no-repeat;
   background-size: cover;
   padding: 54px 0;
 }
@@ -1113,6 +1113,11 @@ li {
   max-width: 1080px;
   margin: 0 auto;
 }
+@media screen and (max-width:1024px) {
+  .contact {
+    max-width: 800px;
+  }
+}
 @media screen and (max-width:599px) {
   .contact {
     max-width: initial;
@@ -1123,6 +1128,11 @@ li {
 .contact-wrap {
   height: 468px;
   position: relative;
+}
+@media screen and (max-width:1024px) {
+  .contact-wrap {
+    height: 360px;
+  }
 }
 @media screen and (max-width:599px) {
   .contact-wrap {
@@ -1139,6 +1149,11 @@ li {
   bottom: 0;
   left: calc(50% + 63px);
   z-index: -1;
+}
+@media screen and (max-width:1024px) {
+  .contact-wrap::after {
+    height: 300px;
+  }
 }
 @media screen and (max-width:599px) {
   .contact-wrap::after {

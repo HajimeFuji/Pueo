@@ -287,7 +287,7 @@
 }
 
 .news {
-    background: url(../img/newsBackground.jpg) center center no-repeat;
+    background: url(../img_for_Pueo/hawaii_beach_background.jpg) center center no-repeat;
     background-size: cover;
     padding: 54px 0;
 
@@ -357,6 +357,10 @@
     max-width: 1080px;
     margin: 0 auto;
 
+    @include mq(tab) {
+        max-width: 800px;
+    }
+
     @include mq(sp){
         max-width: initial;
         width: 100%;
@@ -366,6 +370,10 @@
     &-wrap {
         height: 468px;
         position: relative;
+
+        @include mq(tab) {
+            height: 360px;
+        }
 
         @include mq(sp){
             height: initial;
@@ -381,6 +389,10 @@
             bottom: 0;
             left: calc(50% + 63px);
             z-index: -1;
+
+            @include mq(tab) {
+                height: 300px;
+            }
 
             @include mq(sp){
                 bottom: initial;
