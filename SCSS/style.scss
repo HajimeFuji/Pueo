@@ -21,6 +21,11 @@
     height: 100vh;
     width: calc(100vw - 160px);
     margin-bottom: 288px;
+    @include mq(tab){
+        height: 80vh;
+        width: 100%;
+        margin-bottom: 96px;
+    }
     @include mq(sp){
         height: 70vh;
         width: 100%;
@@ -63,7 +68,7 @@
         flex-wrap: wrap;
         justify-content: space-around;
         row-gap: 36px;
-        @include mq(sp){
+        @include mq(tab){
             max-width: initial;
             margin: 32px auto 0;
             padding: 0 20px;
@@ -149,7 +154,7 @@
         @include mq(sp){
             position: initial;
             height: initial;
-            background-color: $sub;
+            background-color: cadetblue;
             margin-top: 32px;
             margin-bottom: 36px;
             margin-right: 20px;
@@ -208,8 +213,9 @@
             line-height: 2;
 
             &__bold {
-                color: brown;
+                color: rgb(246, 11, 176);
                 font-family: $sans;
+                font-weight: bold;
                 line-height: 2;
             }
             @include mq(sp){
