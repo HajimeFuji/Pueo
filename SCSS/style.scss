@@ -21,10 +21,11 @@
     height: 100vh;
     width: calc(100vw - 160px);
     margin-bottom: 288px;
+
     @include mq(tab){
         height: 80vh;
         width: 100%;
-        margin-bottom: 96px;
+        margin-bottom: 150px;
     }
     @include mq(sp){
         height: 70vh;
@@ -151,6 +152,10 @@
         margin-bottom: 90px;
         // Concept2 との間隔 90px
 
+        @include mq(tab) {
+            height: 350px;
+        }
+
         @include mq(sp){
             position: initial;
             height: initial;
@@ -180,15 +185,15 @@
             position: absolute;
             bottom: 0;
             left: 0;
-            height: 400px;
+            height: 370px;
             width: 920px;
-            padding: 70px 56px;
+            padding: 45px 56px;
             // 重なる順番下
             z-index: -1;
 
             @include mq(tab) {
-                padding: 50px 30px;
-                height: 360px;
+                padding: 20px 30px;
+                height: 300px;
                 width: 700px;
             }
 
@@ -208,6 +213,10 @@
             color: $white;
             font-weight: bold;
             margin-bottom: 28px;
+
+            @include mq(tab) {
+                margin-bottom: 20px;
+            }
             @include mq(sp){
                 font-family: $serif;
                 margin-bottom: 20px;
@@ -463,6 +472,11 @@
 
 .section {
     margin-bottom: 288px;
+
+    @include mq(tab) {
+        margin-bottom: 150px;
+    }
+
     @include mq(sp){
         margin-bottom: 96px;
     }

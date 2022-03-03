@@ -782,7 +782,7 @@ li {
   .main-visual {
     height: 80vh;
     width: 100%;
-    margin-bottom: 96px;
+    margin-bottom: 150px;
   }
 }
 @media screen and (max-width:599px) {
@@ -893,6 +893,11 @@ li {
   height: 450px;
   margin-bottom: 90px;
 }
+@media screen and (max-width:1024px) {
+  .concept1 {
+    height: 350px;
+  }
+}
 @media screen and (max-width:599px) {
   .concept1 {
     position: initial;
@@ -923,15 +928,15 @@ li {
   position: absolute;
   bottom: 0;
   left: 0;
-  height: 400px;
+  height: 370px;
   width: 920px;
-  padding: 70px 56px;
+  padding: 45px 56px;
   z-index: -1;
 }
 @media screen and (max-width:1024px) {
   .concept1-wrap {
-    padding: 50px 30px;
-    height: 360px;
+    padding: 20px 30px;
+    height: 300px;
     width: 700px;
   }
 }
@@ -952,6 +957,11 @@ li {
   color: #FFFFFF;
   font-weight: bold;
   margin-bottom: 28px;
+}
+@media screen and (max-width:1024px) {
+  .concept1__headline {
+    margin-bottom: 20px;
+  }
 }
 @media screen and (max-width:599px) {
   .concept1__headline {
@@ -1224,6 +1234,11 @@ li {
 
 .section {
   margin-bottom: 288px;
+}
+@media screen and (max-width:1024px) {
+  .section {
+    margin-bottom: 150px;
+  }
 }
 @media screen and (max-width:599px) {
   .section {
