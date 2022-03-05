@@ -787,7 +787,7 @@ li {
 }
 @media screen and (max-width:599px) {
   .main-visual {
-    height: 60vh;
+    height: 30vh;
     width: 100%;
     margin-bottom: 96px;
   }
