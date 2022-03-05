@@ -1295,6 +1295,17 @@ li {
     margin-bottom: 32px;
   }
 }
+.eachProduct-content {
+  display: flex;
+  flex-flow: column;
+  width: 50%;
+}
+@media screen and (max-width:599px) {
+  .eachProduct-content {
+    width: 100%;
+    margin-top: 32px;
+  }
+}
 .eachProduct-content__code {
   font-family: "adobe-caslon-pro";
   font-size: 16px;

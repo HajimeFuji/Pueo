@@ -527,13 +527,13 @@
         }
     }
     &-content {
-        // display: flex;
-        // flex-flow: column;
-        // width: 50%;
-        // @include mq(sp){
-        //     width: 100%;
-        //     margin-top: 32px;
-        // }
+        display: flex;
+        flex-flow: column;
+        width: 50%;
+        @include mq(sp){
+            width: 100%;
+            margin-top: 32px;
+        }
 
         &__code {
             font-family: $caslon;
