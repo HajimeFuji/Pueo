@@ -13,7 +13,7 @@ $(function () {
     slides: [
         { src: "./img_for_Pueo/Pueo_main_1.jpg" },
         { src: "./img_for_Pueo/relax_3.jpg" },
-        { src: "./img_for_Pueo/beach_stone.jpg" },
+        { src: "./img_for_Pueo/beach_stone.JPG" },
         ]
     });
 
