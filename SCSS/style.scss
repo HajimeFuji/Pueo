@@ -159,7 +159,7 @@
         @include mq(sp){
             position: initial;
             height: initial;
-            background-color: cadetblue;
+            background-color: $blue;
             margin-top: 32px;
             margin-bottom: 36px;
             margin-right: 20px;
@@ -180,7 +180,7 @@
             }
         }
         &-wrap {
-            background-color: cadetblue;
+            background-color: $blue;
             // boxの左下に張り付け
             position: absolute;
             bottom: 0;
@@ -229,8 +229,8 @@
             line-height: 2;
 
             &__bold {
-                color: rgb(246, 11, 176);
-                font-family: $sans;
+                color: $brown;
+                font-family: $serif;
                 font-weight: bold;
                 line-height: 2;
             }
@@ -296,7 +296,7 @@
 }
 
 .news {
-    background: url(../img_for_Pueo/hawaii_beach_background.jpg) center center no-repeat;
+    background: url(../img_for_Pueo/pueo_bokashi.jpg) center center no-repeat;
     background-size: cover;
     padding: 54px 0;
 
@@ -390,7 +390,7 @@
         }
 
         &::after {
-            background-color: $sub;
+            background-color: $green;
             content: "";
             height: 405px;
             width: calc(((100vw - 160px) / 2) - 63px);

@@ -43,6 +43,12 @@
         <!-- import vue.js -->
         <script src="https://unpkg.com/vue@next"></script>
 
+        <!-- jQuery 1.8 or later, 33 KB -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <!-- Fotorama from CDNJS, 19 KB -->
+        <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+
     </head>
 <body class="drawer drawer--right">
     <div id="app">
@@ -77,7 +83,13 @@
                     <div class="eachProduct">
                         <div class="eachProduct-wrap">
                             <div class="eachProduct-imginfo">
-                                <img src="./img_for_Pueo/standardrefle.JPG" alt="" class="eachProduct__img">
+                                <div class="fotorama eachProduct__img" data-nav="thumbs">
+                                    <img src="./img_for_Pueo/standardrefle.JPG">
+                                    <img src="./img_for_Pueo/refle_cousering_1.JPG">
+                                    <img src="./img_for_Pueo/refle_foot_2.jpg">
+                                    <img src="./img_for_Pueo/refle_foot_3.JPG">
+                                    <img src="./img_for_Pueo/refle_teatime_4.jpg">
+                                </div>
                                 <div class="eachProduct-content">
                                     <!-- <span class="eachProduct-content__code">{{ id }}</span> -->
                                     <h4 class="eachProduct-content__title" :class="{light: classDark}">スタンダードリフレ(約50分)</h4>
@@ -104,7 +116,13 @@
                                 </div>
                             </div>
                             <div class="eachProduct-imginfo">
-                                <img src="./img_for_Pueo/wellness_1.jpg" alt="" class="eachProduct__img">
+                                <div class="fotorama eachProduct__img" data-nav="thumbs">
+                                    <img src="./img_for_Pueo/wellness_1.jpg">
+                                    <img src="./img_for_Pueo/refle_cousering_1.JPG">
+                                    <img src="./img_for_Pueo/refle_foot_2.jpg">
+                                    <img src="./img_for_Pueo/refle_kakushitu_3.JPG">
+                                    <img src="./img_for_Pueo/refle_kakushitu_4.JPG">
+                                </div>
                                 <div class="eachProduct-content">
                                     <!-- <span class="eachProduct-content__code">{{ id }}</span> -->
                                     <h4 class="eachProduct-content__title" :class="{light: classDark}">角質除去(約90分)</h4>

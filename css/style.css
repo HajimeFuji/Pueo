@@ -459,7 +459,7 @@ th {
 }
 
 .footer {
-  background-color: #06945e;
+  background-color: #3ab9b6;
   color: #FFFFFF;
   padding-top: 96px;
   padding-bottom: 72px;
@@ -581,10 +581,10 @@ th {
   width: 32px;
 }
 .color-circle--green {
-  background-color: #315452;
+  background-color: #cac43b;
 }
 .color-circle--blue {
-  background-color: #313854;
+  background-color: #3ab9b6;
 }
 .color-circle--brown {
   background-color: #544031;
@@ -902,7 +902,7 @@ li {
   .concept1 {
     position: initial;
     height: initial;
-    background-color: cadetblue;
+    background-color: #3ab9b6;
     margin-top: 32px;
     margin-bottom: 36px;
     margin-right: 20px;
@@ -924,7 +924,7 @@ li {
   }
 }
 .concept1-wrap {
-  background-color: cadetblue;
+  background-color: #3ab9b6;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -975,8 +975,8 @@ li {
   line-height: 2;
 }
 .concept1__text__bold {
-  color: #f60bb0;
-  font-family: "Noto sans JP";
+  color: #544031;
+  font-family: "Noto Serif JP";
   font-weight: bold;
   line-height: 2;
 }
@@ -1049,7 +1049,7 @@ li {
 }
 
 .news {
-  background: url(../img_for_Pueo/hawaii_beach_background.jpg) center center no-repeat;
+  background: url(../img_for_Pueo/pueo_bokashi.jpg) center center no-repeat;
   background-size: cover;
   padding: 54px 0;
 }
@@ -1151,7 +1151,7 @@ li {
   }
 }
 .contact-wrap::after {
-  background-color: #6F6142;
+  background-color: #cac43b;
   content: "";
   height: 405px;
   width: calc((100vw - 160px) / 2 - 63px);

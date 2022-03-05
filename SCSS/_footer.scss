@@ -2,7 +2,7 @@
 @use "mixin" as *;
 
 .footer {
-    background-color: rgb(6, 148, 94);
+    background-color: $blue;
     color: $white;
     padding-top: 96px;
     padding-bottom: 72px;
