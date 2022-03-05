@@ -16,7 +16,7 @@
 }
 
 .main-visual {
-    background: url(../img_for_Pueo/Pueo_main_1.jpg) center center no-repeat;
+    background: url(../img_for_Pueo/Pueo_main_1-1.jpg) center center no-repeat;
     background-size: cover;
     height: 100vh;
     width: calc(100vw - 160px);
@@ -28,10 +28,13 @@
         margin-bottom: 150px;
     }
     @include mq(sp){
-        height: calc(28vh + 60px);
+        position: relative;
+        top: 60px;
+        height: 40vh;
         width: 100%;
         // aspect-ratio: 4 / 3;
-        margin-bottom: 96px;
+        // padding-top: 100px;
+        margin-bottom: 150px;
     }
 }
 
