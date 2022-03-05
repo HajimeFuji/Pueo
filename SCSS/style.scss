@@ -16,7 +16,7 @@
 }
 
 .main-visual {
-    background: url(../img_for_Pueo/relax_3.jpg) center center no-repeat;
+    background: url(../img_for_Pueo/Pueo_main_1.jpg) center center no-repeat;
     background-size: cover;
     height: 100vh;
     width: calc(100vw - 160px);
@@ -296,7 +296,7 @@
 }
 
 .news {
-    background: url(../img_for_Pueo/pueo_bokashi.jpg) center center no-repeat;
+    background: url(../img_for_Pueo/plumeria_bokashi.jpg) center center no-repeat;
     background-size: cover;
     padding: 54px 0;
 
@@ -306,6 +306,9 @@
 
     .section-headline {
         text-align: center;
+        &__blue {
+            color: $blue;
+        }
     }
     &-wrap {
         display: flex;
