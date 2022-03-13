@@ -5,11 +5,11 @@ $(function () {
         timer: false,
         // ぼかし
         transition: 'blur',
-        transitionDuration: 4000,
-        delay: 4000,
+        transitionDuration: 10000,
+        delay: 10000,
         // サイズ大⇒小 動かす
         animation: 'kenburns',
-        animationDuration: 4000,
+        animationDuration: 10000,
     slides: [
         { src: "./img_for_Pueo/Pueo_main_1-1.jpg" },
         { src: "./img_for_Pueo/relax_3.jpg" },
