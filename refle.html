@@ -1,55 +1,55 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Pueo refle</title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pueo refle</title>
+
+    <!-- webフォント -->
+    <link rel="stylesheet" href="https://use.typekit.net/zij1yya.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- aos.css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- vegas.css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vegas@2.5.4/dist/vegas.min.css">
+    <!-- drawer.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- favicon設置 -->
+    <link rel="apple-touch-icon" type="image/png" href="./favicons/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="./favicons/icon-192x192.png">
+    <link rel="icon" href="./favicons/favicon.ico">
+
+    <!-- jQuery ※scriptを使う -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <!-- aos.js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- vegas.js -->
+    <script src="https://cdn.jsdelivr.net/npm/vegas@2.5.4/dist/vegas.min.js"></script>
+    <!-- iScroll.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+    <!-- drawer.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
+
+    <script src="./js/common.js"></script>
     
-        <!-- webフォント -->
-        <link rel="stylesheet" href="https://use.typekit.net/zij1yya.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
-        <!-- FontAwesome -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <!-- aos.css -->
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <!-- vegas.css -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vegas@2.5.4/dist/vegas.min.css">
-        <!-- drawer.css -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css">
-    
-        <link rel="stylesheet" href="./css/style.css">
+    <!-- import vue.js -->
+    <script src="https://unpkg.com/vue@next"></script>
 
-        <!-- favicon設置 -->
-        <link rel="apple-touch-icon" type="image/png" href="./favicons/apple-touch-icon-180x180.png">
-        <link rel="icon" type="image/png" href="./favicons/icon-192x192.png">
-        <link rel="icon" href="./favicons/favicon.ico">
+    <!-- jQuery 1.8 or later, 33 KB -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+    <!-- Fotorama from CDNJS, 19 KB -->
+    <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+</head>
 
-        <!-- jQuery ※scriptを使う -->
-        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
-        <!-- aos.js -->
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <!-- vegas.js -->
-        <script src="https://cdn.jsdelivr.net/npm/vegas@2.5.4/dist/vegas.min.js"></script>
-        <!-- iScroll.js -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
-        <!-- drawer.js -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
-    
-        <script src="./js/common.js"></script>
-        
-        <!-- import vue.js -->
-        <script src="https://unpkg.com/vue@next"></script>
-
-        <!-- jQuery 1.8 or later, 33 KB -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <!-- Fotorama from CDNJS, 19 KB -->
-        <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
-
-    </head>
 <body class="drawer drawer--right">
     <div id="app">
         <div class="page-wrap" :class="{active: classDark}">
@@ -63,9 +63,9 @@
                     </div>
                     <nav class="drawer-nav" role="navigation">
                         <ul class="drawer-menu">
-                            <!-- <li><a class="drawer-menu-item" href="index.html#products">Products</a></li> -->
-                            <li><a class="drawer-menu-item" href="index.html#recommend">Service Menu</a></li>
+                            <li><a class="drawer-menu-item" href="index.html">Home</a></li>
                             <li><a class="drawer-menu-item" href="index.html#concept">Concept</a></li>
+                            <li><a class="drawer-menu-item" href="index.html#recommend">Service Menu</a></li>
                             <li><a class="drawer-menu-item" href="index.html#news">News</a></li>
                             <li><a class="drawer-menu-item" href="contact.html">Contact</a></li>
                         </ul>
@@ -91,7 +91,6 @@
                                     <img src="./img_for_Pueo/refle_teatime_4.jpg">
                                 </div>
                                 <div class="eachProduct-content">
-                                    <!-- <span class="eachProduct-content__code">{{ id }}</span> -->
                                     <h4 class="eachProduct-content__title" :class="{light: classDark}">スタンダードリフレ(約50分)</h4>
                                     <span class="eachProduct-content__price" :class="{light: classDark}">￥4,400<span class="eachProduct-content__price-sub">(税込)</span></span>
                                     <p class="eachProduct-content__text" :class="{light: classDark}">
@@ -112,7 +111,6 @@
                                     <img src="./img_for_Pueo/refle_kakushitu_4.JPG">
                                 </div>
                                 <div class="eachProduct-content">
-                                    <!-- <span class="eachProduct-content__code">{{ id }}</span> -->
                                     <h4 class="eachProduct-content__title" :class="{light: classDark}">角質除去(約90分)</h4>
                                     <span class="eachProduct-content__price" :class="{light: classDark}">￥7,700<span class="eachProduct-content__price-sub">(税込)</span></span>
                                     <p class="eachProduct-content__text" :class="{light: classDark}">
@@ -123,11 +121,6 @@
                                         ご自分にあった間隔を見つけて定期的に取り除いてあげることが大切です。
                                         心地よいリズムの中でリラックスしながらすべすべツルツルな
                                         足裏に仕上げます。
-                                        <!-- 心地よいリズムの中でリラックスしながらすべすべツルツルな足裏に仕上げます。<br>
-                                        しばらくノーケアでたまに角質除去するよりも、定期的に不要になった<br class="tab-none">
-                                        古い角質を丁寧に取り除いてあげることが大切です。<br class="tab-none">
-                                        見違えるような滑らかな足裏に！！<br class="mobile-none">
-                                        靴を見直して自分の足にあった摩擦の少ない靴を履きましょう。 -->
                                     </p>
                                 </div>
                             </div>
@@ -139,16 +132,12 @@
             <header>
                 <div class="header">
                     <h1 class="header__logo">
-                        <a href="index.html"><img src="./img_for_Pueo/Pueo_logo.svg" alt="WOODEN STUDIOのロゴ"></a>
+                        <a href="index.html"><img src="./img_for_Pueo/Pueo_logo.svg" alt="Pueoのロゴ"></a>
                     </h1>
                     <nav>
                         <ul class="header-nav">
-                            <!-- <li v-if="iconChange" @click="toggleDark" class="header-nav__link"><i class="fas fa-moon"></i></li> -->
-                            <!-- <li v-else @click="toggleDark" class="header-nav__link"><i class="fas fa-sun"></i></li> -->
-                            <!-- (li.header-nav__link>a)*5 -->
-                            <!-- <li class="header-nav__link"><a href="index.html#products">Products</a></li> -->
-                            <li class="header-nav__link"><a href="index.html#recommend">Service Menu</a></li>
                             <li class="header-nav__link"><a href="index.html#concept">Concept</a></li>
+                            <li class="header-nav__link"><a href="index.html#recommend">Service Menu</a></li>
                             <li class="header-nav__link"><a href="index.html#news">News</a></li>
                             <li class="header-nav__link"><a href="contact.html">Contact</a></li>
                         </ul>
@@ -162,13 +151,12 @@
             </header>
         </div>
     </div>
-
     <footer>
         <div class="footer">
             <h1 class="footer__logo">Pueo</h1>
             <nav>
                 <ul class="footer-nav">
-                    <!-- <li class="footer-nav__link"><a href="index.html#products">Products</a></li> -->
+                    <li class="footer-nav__link"><a href="index.html#intro">Intro</a></li>
                     <li class="footer-nav__link"><a href="index.html#recommend">Menu</a></li>
                     <li class="footer-nav__link"><a href="index.html#concept">Concept</a></li>
                     <li class="footer-nav__link"><a href="index.html#news">News</a></li>

@@ -20,42 +20,7 @@
     background-size: cover;
     height: 100vh;
     width: calc(100vw - 160px);
-    margin-bottom: 288px;
-
-    .headingBlock {
-        position: absolute;
-        bottom: 0px;
-        left: 0px;
-        transform: translate(0%,0%);
-        color: $main;
-        width: 100%;
-        height: 60px;
-        background-color: rgba($color: $white, $alpha: 0.75);
-        display: flex;
-        flex-flow: column;
-        justify-content: space-around;
-        @include mq(sp) {
-            height: 48px;
-        }
-
-        &__main {
-            font-size: 20px;
-            font-weight: bold;
-            text-align: center;
-            @include mq(sp) {
-                font-size: 12px;
-            }
-        }
-
-        &__sub {
-            font-size: 18px;
-            text-align: center;
-            @include mq(sp) {
-                font-size: 10px;
-                text-align: center;
-            }
-        }
-    }
+    margin-bottom: 144px;
 
     @include mq(tab){
         height: 80vh;
@@ -73,15 +38,21 @@
     }
 }
 
-.products {
+.intro {
     .section-headline {
         text-align: center;
+        &__sub {
+            // color: $sub;
+            // font-weight: bold;
+            // margin-bottom: 8px;
+            margin-top: 16px;
+        }
     }
 
     &-wrap {
         display: flex;
         flex-wrap: wrap;
-        margin-top: 54px;
+        margin-top: 24px;
         @include mq(sp){
             margin-top: 32px;
         }
@@ -507,6 +478,8 @@
             bottom: initial;
             left: initial;
             margin-top: 32px;
+            margin-left: auto;
+            margin-right: auto;
         }
     }
 }
@@ -524,7 +497,7 @@
     }
 }
 
-// Product ページ
+// service menu ページ
 .eachProduct {
     width: calc(100vw - 160px);
     padding-top: 170px;
@@ -536,7 +509,6 @@
         padding-top: 60px;
         padding-bottom: 96px;
     }
-
     &-wrap {
         max-width: 1080px;
         margin: 0 auto;
@@ -544,7 +516,6 @@
             width: 100%;
         }
     }
-
     &-imginfo {
         margin-bottom: 72px;
         display: flex;
@@ -555,14 +526,12 @@
             column-gap: initial;
         }
     }
-
     &__img {
         width: 50%;
         @include mq(sp){
             // height: 50vh;
             width: 100%;
             margin-bottom: 32px;
-
         }
     }
     &-content {
@@ -573,18 +542,6 @@
             width: 100%;
             margin-top: 32px;
         }
-
-        &__code {
-            font-family: $caslon;
-            font-size: 16px;
-            font-weight: bold;
-            margin-bottom: 8px;
-            @include mq(sp){
-                font-size: 12px;
-                margin-bottom: 0;
-            }
-        }
-
         &__title {
             font-family: $serif;
             font-size: 28px;
@@ -594,102 +551,21 @@
                 font-size: 20px;
             }
         }
-
         &__price {
             font-family: $serif;
             font-size: 24px;
             font-weight: bold;
             margin-bottom: 50px;
-
             @include mq(sp){
                 font-size: 18px;
                 margin-bottom: 48px;
             }
-
             &-sub {
                 font-size: 12px;
                 font-weight: normal;
-
                 @include mq(sp){
                     font-size: 10px;
                 }
-
-            }
-        }
-
-        &__spec {
-            display: flex;
-            align-items: center;
-            margin-bottom: 8px;
-
-            @include mq(sp){
-                display: block;
-            }
-
-            .eachProduct-color {
-                display: flex;
-                align-items: center;
-
-                &-p {
-                    font-family: $sans;
-                    font-size: 16px;
-                    // margin-bottom: 12px;
-
-                    @include mq(sp){
-                        font-size: 14px;
-                        margin-bottom: 20px;
-                    }
-
-                }
-                &-link {
-                    display: flex;
-                    margin-left: 16px;
-                    margin-right: 32px;
-                    // margin-bottom: 8px;
-                    column-gap: 10px;
-
-                    @include mq(sp){
-                        margin-left: 14px;
-                        margin-bottom: 14px;
-                    }
-
-                    // &__icon {
-                    //     background-color: $green;
-                    //     height: 32px;
-                    //     width: 32px;
-                    //     border-radius: 50%;
-                    //     // margin-right: 10px;
-                    //     &:nth-child(2) {
-                    //         background-color: $blue;
-                    //     }
-                    //     &:last-child {
-                    //         // margin-right: 0;
-                    //         background-color: $brown;
-                    //     }
-                    // }
-                }
-            }
-        }
-
-        &__size {
-            font-family: $sans;
-            font-size: 16px;
-            // margin-bottom: 12px;
-
-            @include mq(sp){
-                font-size: 14px;
-                margin-bottom: 14px;
-            }
-        }
-
-        .bottom-line {
-            background-color: $black;
-            height: 1px;
-            width: 100%;
-            margin-bottom: 48px;
-
-            @include mq(sp){
-                margin-bottom: 24px;
             }
         }
 
@@ -741,12 +617,13 @@
         width: 50%;
         height: calc((((100vw - 160px) / 2) / 6 )* 7.7);
         // aspect-ratio: 603 / 270;
-        margin-top: 20px;
         display: flex;
         justify-content: center;
         align-items: center;
 
         @include mq(sp){
+            position: relative;
+            top: 30px;
             height: 50vh;
             width: 100%;
             // aspect-ratio: 5 / 2;
@@ -771,7 +648,7 @@
 
     &-content {
         width: 50%;
-        padding-top: 64px;
+        padding-top: 32px;
         padding-bottom: 288px;
 
         @include mq(sp){
@@ -789,7 +666,7 @@
             margin-bottom: 64px;
 
             @include mq(sp){
-                font-size: 14px;
+                font-size: 12px;
                 line-height: 1.8;
                 margin-bottom: 32px;
             }

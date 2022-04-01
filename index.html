@@ -63,9 +63,9 @@
                     </div>
                     <nav class="drawer-nav" role="navigation">
                         <ul class="drawer-menu">
-                            <!-- <li><a class="drawer-menu-item" href="index.html#products">Products</a></li> -->
-                            <li><a class="drawer-menu-item" href="index.html#recommend">Service Menu</a></li>
+                            <li><a class="drawer-menu-item" href="index.html">Home</a></li>
                             <li><a class="drawer-menu-item" href="index.html#concept">Concept</a></li>
+                            <li><a class="drawer-menu-item" href="index.html#recommend">Service Menu</a></li>
                             <li><a class="drawer-menu-item" href="index.html#news">News</a></li>
                             <li><a class="drawer-menu-item" href="contact.html">Contact</a></li>
                         </ul>
@@ -80,12 +80,26 @@
 
             <main>
                 <div class="main-visual">
-                    <div class="headingBlock">
-                        <p class="headingBlock__main">Pueoに秘めた想い</p>
-                        <p class="headingBlock__sub">Pueoはハワイ語でコミミズク(ハワイ・フクロウ)の亜種で <br class ="pc-none">
-                            ハワイでは先祖の霊が宿る神聖な鳥です。</p>
-                    </div>
                 </div>
+
+                <!-- Intro -->
+                <section>
+                    <div class="section intro" id="intro">
+                        <div class="section-headline" data-aos="fade-up" data-aos-duration="1000">
+                            <h3 class="section-headline__main">Pueoに秘めた想い</h3>
+                            <p class="section-headline__sub">Pueoはハワイ語でコミミズク(ハワイ・フクロウ)の亜種で <br class ="pc-none">
+                                ハワイでは先祖の霊が宿る神聖な鳥とされています。</p>
+                        </div>
+                        <div class="intro-wrap">
+                            <div class="intro-content">
+                                <img src="./img_for_Pueo/owl_3_2.jpg" alt="" class="intro-content__img" data-aos="zoom-in-down">
+                            </div>
+                            <div class="intro-content">
+                                <img src="./img_for_Pueo/twin_fukurou_01.JPG" alt="" class="intro-content__img" data-aos="zoom-in-down">
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
                 <!-- Concept -->
                 <article>
@@ -171,11 +185,12 @@
                                 </a>
                             </article>
                         </div>
-                        <div>
+                        <!-- <div>
                             <a href="" class="btn" :class="{btnDark: classDark}">もっと見る</a>
-                        </div>
+                        </div> -->
                     </div>
                 </section>
+
                 <!-- News -->
                 <section>
                     <div class="section news" id="news">
@@ -199,25 +214,11 @@
                                 <h4 class="news-content__title">TSUTAYA江別 体験会</h4>
                                 <div class="news-content__line"></div>
                             </div>
-                            <!-- <div class="news-content">
-                                <span class="news-content__date">2022.01.03</span>
-                                <h4 class="news-content__title">初売りセール開催中</h4>
-                                <div class="news-content__line"></div>
-                            </div> -->
-                            <!-- <div class="news-content">
-                                <span class="news-content__date">2022.01.01</span>
-                                <h4 class="news-content__title">明けましておめでとうございます</h4>
-                                <div class="news-content__line"></div>
-                            </div>
-                            <div class="news-content">
-                                <span class="news-content__date">2021.12.25</span>
-                                <h4 class="news-content__title">年末年始の営業について</h4>
-                                <div class="news-content__line"></div>
-                            </div> -->
                         </div>
                         <a href="" class="btn  btn--primary">もっと見る</a>
                     </div>
                 </section>
+
                 <!-- Contact -->
                 <section>
                     <div class="section contact" id="contact">
@@ -245,12 +246,8 @@
                     </h1>
                     <nav>
                         <ul class="header-nav">
-                            <!-- <li v-if="iconChange" @click="toggleDark" class="header-nav__link"><i class="fas fa-moon"></i></li>
-                            <li v-else @click="toggleDark" class="header-nav__link"><i class="fas fa-sun"></i></li> -->
-                            <!-- (li.header-nav__link>a)*5 -->
-                            <!-- <li class="header-nav__link"><a href="index.html#products">Products</a></li> -->
-                            <li class="header-nav__link"><a href="index.html#recommend">Service Menu</a></li>
                             <li class="header-nav__link"><a href="index.html#concept">Concept</a></li>
+                            <li class="header-nav__link"><a href="index.html#recommend">Service Menu</a></li>
                             <li class="header-nav__link"><a href="index.html#news">News</a></li>
                             <li class="header-nav__link"><a href="contact.html">Contact</a></li>
                         </ul>
@@ -270,6 +267,7 @@
             <nav>
                 <ul class="footer-nav">
                     <!-- <li class="footer-nav__link"><a href="index.html#products">Products</a></li> -->
+                    <li class="footer-nav__link"><a href="index.html#intro">Intro</a></li>
                     <li class="footer-nav__link"><a href="index.html#recommend">Menu</a></li>
                     <li class="footer-nav__link"><a href="index.html#concept">Concept</a></li>
                     <li class="footer-nav__link"><a href="index.html#news">News</a></li>
