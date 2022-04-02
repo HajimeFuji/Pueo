@@ -38,15 +38,20 @@
     }
 }
 
-.intro {
+.pueo {
     .section-headline {
         text-align: center;
-        &__sub {
-            // color: $sub;
-            // font-weight: bold;
-            // margin-bottom: 8px;
-            margin-top: 16px;
-        }
+        // // justify-content: center;
+        // display: flex;
+        // flex-flow: column;
+        // max-width: 1080px;
+        // padding: 0 auto;
+        // &__main {
+        //     // color: $sub;
+        //     // font-weight: bold;
+        //     // margin-bottom: 8px;
+        //     // padding-top: 16px;
+        // }
     }
 
     &-wrap {
@@ -55,6 +60,12 @@
         margin-top: 24px;
         @include mq(sp){
             margin-top: 32px;
+        }
+        &__text {
+            max-width: 1080px;
+            display: flex;
+            margin: 0px 100px 24px 100px;
+            line-height: 2;
         }
     }
 

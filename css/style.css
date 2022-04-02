@@ -551,6 +551,7 @@ th {
 .section-headline__main {
   color: #6E551B;
   font-weight: bold;
+  padding-top: 32px;
 }
 
 .sns-link {
@@ -796,26 +797,29 @@ li {
   }
 }
 
-.intro .section-headline {
+.pueo .section-headline {
   text-align: center;
 }
-.intro .section-headline__sub {
-  margin-top: 16px;
-}
-.intro-wrap {
+.pueo-wrap {
   display: flex;
   flex-wrap: wrap;
   margin-top: 24px;
 }
 @media screen and (max-width:599px) {
-  .intro-wrap {
+  .pueo-wrap {
     margin-top: 32px;
   }
 }
-.intro-content {
+.pueo-wrap__text {
+  max-width: 1080px;
+  display: flex;
+  margin: 0px 100px 24px 100px;
+  line-height: 2;
+}
+.pueo-content {
   width: 50%;
 }
-.intro-content__img {
+.pueo-content__img {
   width: 100%;
 }
 
