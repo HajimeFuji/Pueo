@@ -35,6 +35,9 @@
 
         &__link {
             font-size: 14px;
+            @include mq(sp) {
+                font-size: 12px;
+            }
         }
     }
     &-contact {

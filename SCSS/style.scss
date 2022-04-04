@@ -41,17 +41,6 @@
 .pueo {
     .section-headline {
         text-align: center;
-        // // justify-content: center;
-        // display: flex;
-        // flex-flow: column;
-        // max-width: 1080px;
-        // padding: 0 auto;
-        // &__main {
-        //     // color: $sub;
-        //     // font-weight: bold;
-        //     // margin-bottom: 8px;
-        //     // padding-top: 16px;
-        // }
     }
 
     &-wrap {
@@ -59,13 +48,19 @@
         flex-wrap: wrap;
         margin-top: 24px;
         @include mq(sp){
-            margin-top: 32px;
+            margin-top: 16px;
         }
         &__text {
             max-width: 1080px;
             display: flex;
-            margin: 0px 100px 24px 100px;
+            margin: 0px 60px 24px 60px;
             line-height: 2;
+            @include mq(sp) {
+                margin: initial;
+                padding: 0 20px;
+                line-height: 1.8;
+                font-size: 12px;
+            }
         }
     }
 
@@ -84,11 +79,11 @@
     }
 
     &-wrap {
-        max-width: 1080px;
+        max-width: calc(100vw - 200px);
         margin: 54px auto 0;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: space-between;
         row-gap: 36px;
         @include mq(tab){
             max-width: initial;
@@ -105,14 +100,21 @@
         .img-box{
             // BGCを透過させて少し黄色が買った感じに
             background-color: $main;
+            box-shadow: 0 5px 10px rgba($color: #000000, $alpha: 0.5);
             // 子要素が親要素より大きい時に隠す
             // img-boxの大きさは指定しないと子要素の大きさ維持
             overflow: hidden;
+            @include mq(sp){
+                box-shadow: 0 2px 5px rgba($color: #000000, $alpha: 0.2);
+                height: initial;
+                width: 100%;
+            }
         }
 
         &__img {
-            height: 300px;
-            width: 450px;
+            width: 480px;
+            height: 320px;
+            // aspect-ratio: 3 / 2;
             display: inline-block;
             // アクションをゆっくり
             transition: all .8s ease;
