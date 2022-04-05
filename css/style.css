@@ -575,8 +575,8 @@ th {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 48px;
-  width: 48px;
+  height: 32px;
+  width: 32px;
   border-radius: 50%;
   margin-right: 10px;
 }
@@ -812,7 +812,6 @@ li {
 .pueo {
   max-width: calc(100vw - 160px);
   padding-top: 92px;
-  padding-bottom: 288px;
 }
 @media screen and (max-width:599px) {
   .pueo {
@@ -837,7 +836,7 @@ li {
 }
 .pueo-wrap__text {
   width: 50%;
-  padding: 0 40px;
+  padding: 0 20px;
   line-height: 2;
 }
 @media screen and (max-width:599px) {
@@ -865,7 +864,7 @@ li {
   }
 }
 .pueo .btn {
-  margin-left: auto;
+  margin: 48px auto;
 }
 @media screen and (max-width:599px) {
   .pueo .btn {

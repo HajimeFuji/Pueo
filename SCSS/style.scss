@@ -41,7 +41,7 @@
 .pueo {
     max-width: calc(100vw - 160px);
     padding-top:92px;
-    padding-bottom: 288px;
+    // padding-bottom: 288px;
     @include mq(sp){
         max-width: initial;
         width: 100%;
@@ -62,7 +62,7 @@
         }
         &__text {
             width: 50%;
-            padding: 0 40px;
+            padding: 0 20px;
             line-height: 2;
             @include mq(sp) {
                 width: 100%;
@@ -86,7 +86,7 @@
         }
     }
     .btn {
-        margin-left: auto;
+        margin: 48px auto;
 
         @include mq(sp){
             margin: 0 auto;
