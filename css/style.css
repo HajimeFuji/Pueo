@@ -415,6 +415,8 @@ th {
   width: 100px;
 }
 .header-nav__link {
+  font-family: "Noto sans JP";
+  font-size: 14px;
   text-align: center;
   margin-bottom: 32px;
 }
@@ -433,6 +435,7 @@ th {
 @media screen and (max-width:599px) {
   .sp-header {
     background-color: #FFFFFF;
+    font-family: "Noto sans JP";
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
     height: 60px;
     width: 100%;
@@ -483,6 +486,7 @@ th {
 }
 .footer-nav {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   -moz-column-gap: 28px;
        column-gap: 28px;
@@ -495,16 +499,19 @@ th {
 }
 .footer-nav__link {
   font-size: 14px;
+  font-family: "Noto sans JP";
 }
 @media screen and (max-width:599px) {
   .footer-nav__link {
     font-size: 12px;
+    padding-bottom: 8px;
   }
 }
 .footer-contact {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: "Noto sans JP";
   margin-bottom: 72px;
 }
 @media screen and (max-width:599px) {
@@ -564,12 +571,12 @@ th {
 }
 .sns-link__icon {
   background-color: #FFFFFF;
-  color: #323232;
+  color: #3ab9b6;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 32px;
-  width: 32px;
+  height: 48px;
+  width: 48px;
   border-radius: 50%;
   margin-right: 10px;
 }
@@ -577,7 +584,7 @@ th {
   margin-right: 0;
 }
 .sns-link__icon--primary {
-  background-color: #6E551B;
+  background-color: #323232;
   color: #FFFFFF;
 }
 
@@ -1410,7 +1417,7 @@ li {
   }
 }
 .contactForm__img {
-  background: url(../img_for_Pueo/foot_2.jpg) center center no-repeat;
+  background: url(../img_for_Pueo/foot_2_.jpg) center center no-repeat;
   background-size: cover;
   width: 50%;
   height: calc((100vw - 160px) / 2 / 6 * 7.7);

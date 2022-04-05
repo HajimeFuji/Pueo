@@ -20,14 +20,14 @@
     // column-gap: 10px; 
     &__icon {
         background-color: $white;
-        color: $black;
+        color: $blue;
     // 親要素の背景に子要素のアイコンを中央に配置する
         display: flex;
         align-items: center;
         justify-content: center;
 
-        height: 32px;
-        width: 32px;
+        height:48px;
+        width: 48px;
         border-radius: 50%;
         margin-right: 10px;
         &:last-child {
@@ -35,7 +35,7 @@
         }
         
         &--primary {
-            background-color: $main;
+            background-color: $black;
             color: $white;
         }
     }

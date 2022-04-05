@@ -25,6 +25,7 @@
 
     &-nav {
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         column-gap: 28px;
         margin-bottom: 14px;
@@ -35,8 +36,10 @@
 
         &__link {
             font-size: 14px;
+            font-family: $sans;
             @include mq(sp) {
                 font-size: 12px;
+                padding-bottom: 8px;
             }
         }
     }
@@ -44,6 +47,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        font-family: $sans;
         margin-bottom: 72px;
 
         @include mq(sp){
