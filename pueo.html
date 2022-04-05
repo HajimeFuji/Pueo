@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pueoに秘めた想い</title>
+
+    <!-- webフォント -->
+    <link rel="stylesheet" href="https://use.typekit.net/zij1yya.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- aos.css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- vegas.css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vegas@2.5.4/dist/vegas.min.css">
+    <!-- drawer.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- favicon設置 -->
+    <link rel="apple-touch-icon" type="image/png" href="./favicons/apple-touch-icon-180x180.png" sizes="180x180">
+    <link rel="icon" type="image/png" href="./favicons/icon-192x192.png">
+    <link rel="icon" href="./favicons/favicon.ico">
+
+    <!-- jQuery ※scriptを使う -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <!-- jQuery 1.8 or later, 33 KB -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- aos.js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- vegas.js -->
+    <script src="https://cdn.jsdelivr.net/npm/vegas@2.5.4/dist/vegas.min.js"></script>
+    <!-- iScroll.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+    <!-- drawer.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
+
+    <script src="./js/common.js"></script>
+
+    <!-- import vue.js -->
+    <script src="https://unpkg.com/vue@next"></script>
+
+    <!-- Fotorama from CDNJS, 19 KB -->
+    <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+
+</head>
+<body class="drawer drawer--right">
+    <div id="app">
+        <div class="page-wrap">
+            <header>
+                <div class="sp-header">
+                    <h1>
+                        <a href="index.html"><img src="./img_for_Pueo/Pueo_logo_yoko.png" alt="" class="sp-header__logo"></a>
+                    </h1>
+                    <div class="hamburger drawer-toggle drawer-hamburger">
+                        <span class="drawer-hamburger-icon"></span>
+                    </div>
+                    <nav class="drawer-nav" role="navigation">
+                        <ul class="drawer-menu">
+                            <li><a class="drawer-menu-item" href="index.html">トップ</a></li>
+                            <li><a class="drawer-menu-item" href="index.html#concept">コンセプト</a></li>
+                            <li><a class="drawer-menu-item" href="index.html#recommend">サービスメニュー</a></li>
+                            <li><a class="drawer-menu-item" href="https://www.ject-eye.com/" target="_blank" rel="noopener norefferrer">日本ｱｲｹｱｾﾗﾋﾟｽﾄ協会</a></li>
+                            <li><a class="drawer-menu-item" href="pueo.html" target="_blank" rel="noopener norefferrer">Pueoに秘めた想い</a></li>
+                            <li><a class="drawer-menu-item" href="index.html#news">ニュース</a></li>
+                            <li><a class="drawer-menu-item" href="https://form.run/@pueoulu-1649126140" target="_blank" rel="noopener norefferrer">コンタクト</a></li>
+                        </ul>
+                        <div class="sns-link">
+                            <!-- <a href="" class="sns-link__icon sns-link__icon--primary"><i class="fab fa-instagram"></i></a> -->
+                            <!-- <a href="" class="sns-link__icon sns-link__icon--primary"><i class="fab fa-twitter"></i></a> -->
+                            <a href="" class="sns-link__icon sns-link__icon--primary"><i class="fab fa-facebook-f"></i></a>
+                            <a href="" class="sns-link__icon sns-link__icon--primary"><i class="fab fa-line"></i></a>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+
+            <main>
+                <!-- about Pueo -->
+                <section>
+                    <div class="section pueo" id="pueo">
+                        <div class="section-headline" data-aos="fade-up" data-aos-duration="1000">
+                            <h2 class="section-headline__main">Pueoに秘めた想い</h2>
+                        </div>
+                        <div class="pueo-wrap">
+                            <div class="pueo-wrap__text">
+                                <p class="">Pueoはハワイ語でコミミズク(ハワイ・フクロウ)の亜種で
+                                    ハワイでは先祖の霊が宿る神聖な鳥とされています。
+                                    いつの頃からかフクロウが好きで気付けば各地各国のフクロウ🦉が我が家にいます。
+                                    近くの森に行って運が良ければ出会う事ができるフクロウは、いつからか私の守り神。
+                                    その姿は堂々とした風格がありながらもどこか温かく優しくて可愛くていつも見守ってくれて
+                                    ゆっくりでいいんだよーって待っていてくれるような…❤️
+                                    凛とした佇まいから勝手に受け取るメッセージ。
+                                    Pueoは、江別市大麻の住宅街にある一軒家。
+                                    完全予約制でプライベートな空間です。周りの目を気にせずにリラックスしていただけます。
+                                    ほっと一息つけるような、ちょっとだけ羽を休めに、リフレッシュしてまた自分のためにもみんなのためにもがんばれます！
+                                    そんな隠れ家的な感覚で充電しにお越しいただけたらいいなぁと思っています。<br>
+                                    (ひとりごと)マイペースに振舞うって簡単なことのようでとっても難しいと思う。
+                                    人とのお付き合いにおいて合わせることは勿論大切な事だけど、ちゃんと自分らしくいられる
+                                    自分でありたい。
+                                    私の周りには自分のペースをちゃんと貫ける達人が多いのでいつも見習いたいなぁと思う日々。
+                                    好きな自分で居られるように。楽しかったと振り返れる人生を❤️
+                                </p>
+                            </div>
+                            <div class="pueo-wrap__content">
+                                <img src="./img_for_Pueo/hawaii_yasuko_4-3_600.jpg" alt="" class="pueo-wrap__content__img" data-aos="zoom-in-down">
+                            </div>
+                        </div>
+                        <div class="section-headline" data-aos="fade-up" data-aos-duration="1000">
+                            <h2 class="section-headline__main">ごあいさつ</h2>
+                        </div>
+                        <div class="pueo-wrap">
+                            <div class="pueo-wrap__content">
+                                <img src="./img_for_Pueo/twin_fukurou_01.JPG" alt="" class="pueo-wrap__content__img" data-aos="zoom-in-down">
+                            </div>
+                            <div class="pueo-wrap__text">
+                                <p class="">
+                                    のんびりゆったりした気持ちを持って日々過ごしたい！！そう思いながらも日常はそんな事許してくれませんね。
+                                    時間だけは刻々と過ぎてゆく。
+                                    頑張るのはフツーだし頑張る自分も嫌いではないけれど時には深呼吸。
+                                    自分を取り戻す時間を自分のために作ることも本当に大切なことだと思います。
+                                    自分が元気じゃないと自分の大切な人を大切にできないから。
+                                    <自分を大切に。自分の大切な人を大切に❤️>
+                                    <自分を好きと思える自分でいたいから❤️>
+
+                                    手から伝わるもの❤️手当てから伝わるpowerは心にもきっと寄り添ってくれると信じています。
+                                    Pueoに来て下さった方を少しでもハッピーに
+                                    日常から少しだけ離れて身体もココロも気持ちも軽くしてまた日常へ。
+                                    リラックスして更に身体が自然に自然治癒力をUpしてくれたら…こんなに嬉しいことはありません。
+                                    毎日頑張っている自分へのご褒美です！！
+                                    (ごほうび大好きな私です😘)
+                                    色々な事がいい巡りでみんなの笑顔が増えたら嬉しいです。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="">
+                            <a href="https://form.run/@pueoulu-1649126140" class="btn" target="_blank" rel="noopener norefferrer">お問い合わせ</a>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <header>
+                <div class="header">
+                    <h1 class="header__logo">
+                        <a href="index.html"><img src="./img_for_Pueo/Pueo_logo.svg" alt="Pueoのロゴ"></a>
+                    </h1>
+                    <nav>
+                        <ul class="header-nav">
+                            <li class="header-nav__link"><a href="index.html#concept">コンセプト</a></li>
+                            <li class="header-nav__link"><a href="index.html#recommend">サービスメニュー</a></li>
+                            <li class="header-nav__link"><a href="https://www.ject-eye.com/" target="_blank" rel="noopener norefferrer">日本ｱｲｹｱｾﾗﾋﾟｽﾄ協会</a></li>
+                            <li class="header-nav__link"><a href="pueo.html" target="_blank" rel="noopener norefferrer">Pueoに秘めた想い</a></li>
+                            <li class="header-nav__link"><a href="index.html#news">ニュース</a></li>
+                            <li class="header-nav__link"><a href="https://form.run/@pueoulu-1649126140" target="_blank" rel="noopener norefferrer">コンタクト</a></li>
+                        </ul>
+                    </nav>
+                    <div class="sns-link">
+                        <!-- <a href="" class="sns-link__icon sns-link__icon--primary"><i class="fab fa-instagram"></i></a> -->
+                        <!-- <a href="" class="sns-link__icon sns-link__icon--primary"><i class="fab fa-twitter"></i></a> -->
+                        <a href="" class="sns-link__icon sns-link__icon--primary"><i class="fab fa-facebook-f fa-2x"></i></a>
+                        <a href=""><i class="fab fa-line fa-3x"></i></a>
+                    </div>
+                </div>
+            </header>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <h1 class="footer__logo">Pueo</h1>
+            <nav>
+                <ul class="footer-nav">
+                    <li class="footer-nav__link"><a href="index.html">トップ</a></li>
+                    <li class="footer-nav__link"><a href="index.html#concept">コンセプト</a></li>
+                    <li class="footer-nav__link"><a href="index.html#recommend">サービスメニュー</a></li>
+                    <li class="footer-nav__link"><a href="https://www.ject-eye.com/" target="_blank" rel="noopener norefferrer">日本ｱｲｹｱｾﾗﾋﾟｽﾄ協会</a></li>
+                    <li class="footer-nav__link"><a href="pueo.html" target="_blank" rel="noopener norefferrer">Pueoに秘めた想い</a></li>
+                    <li class="footer-nav__link"><a href="index.html#news">ニュース</a></li>
+                </ul>
+            </nav>
+            <div class="footer-contact">
+                <div class="footer-mail">
+                    <i class="footer-mail__icon far fa-envelope"></i>
+                    <a href="https://form.run/@pueoulu-1649126140" class="footer-mail__link" target="_blank" rel="noopener norefferrer">コンタクト</a>
+                </div>
+                <div class="sns-link">
+                    <!-- <a href="" class="sns-link__icon"><i class="fab fa-instagram"></i></a> -->
+                    <!-- <a href="" class="sns-link__icon"><i class="fab fa-twitter"></i></a> -->
+                    <a href="" class="sns-link__icon"><i class="fab fa-facebook-f fa-2x"></i></a>
+                    <a href="" ><i class="fab fa-line fa-3x"></i></a>
+                </div>
+            </div>
+            <div class="information">
+                <p class="information__text">北海道江別市大麻 自宅サロン</p>
+                <p>TEL: 090-9439-5387</p>
+                <p class="information__text">完全予約制 平日OPEN（不定休）</p>
+            </div>
+            <div class="copyrights">
+                Copyright ©︎ Pueo All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+
+</body>
+</html>

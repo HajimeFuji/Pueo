@@ -39,37 +39,58 @@
 }
 
 .pueo {
+    max-width: calc(100vw - 160px);
+    padding-top:92px;
+    padding-bottom: 288px;
+    @include mq(sp){
+        max-width: initial;
+        width: 100%;
+        padding: 60px 20px 0 20px;
+    }
+
     .section-headline {
         text-align: center;
     }
 
     &-wrap {
         display: flex;
-        flex-wrap: wrap;
-        margin-top: 24px;
+        margin: 32px auto;
         @include mq(sp){
+            display: block;
+            width: 100%;
             margin-top: 16px;
         }
         &__text {
-            max-width: 1080px;
-            display: flex;
-            margin: 0px 60px 24px 60px;
+            width: 50%;
+            padding: 0 40px;
             line-height: 2;
             @include mq(sp) {
-                margin: initial;
-                padding: 0 20px;
+                width: 100%;
+                padding: initial;
                 line-height: 1.8;
                 font-size: 12px;
             }
         }
-    }
-
-    &-content {
-        width: 50%;
-        &__img {
-            width: 100%;
+        &__content {
+            width: 50%;
+            @include mq(sp) {
+                width: 100%;
+            }
+            &__img {
+                width: 100%;
+                @include mq(sp) {
+                    width: 100%;
+                }
+            }
+            // 親要素に対して50%、それぞれのboxに対して100%
         }
-        // 親要素に対して50%、それぞれのboxに対して100%
+    }
+    .btn {
+        margin-left: auto;
+
+        @include mq(sp){
+            margin: 0 auto;
+        }
     }
 }
 
