@@ -786,7 +786,7 @@ li {
 }
 
 .main-visual {
-  background: url(../img_for_Pueo/Pueo_main_1-1.jpg) center center no-repeat;
+  background: url(../img_for_Pueo/relax_3_m.jpg) center center no-repeat;
   background-size: cover;
   height: 100vh;
   width: calc(100vw - 160px);
@@ -1120,7 +1120,7 @@ li {
 }
 
 .news {
-  background: url(../img_for_Pueo/plumeria_bokashi.jpg) center center no-repeat;
+  background: url(../img_for_Pueo/bg_for_news.jpg) center center no-repeat;
   background-size: cover;
   padding: 54px 0;
 }
@@ -1131,9 +1131,6 @@ li {
 }
 .news .section-headline {
   text-align: center;
-}
-.news .section-headline__blue {
-  color: #3ab9b6;
 }
 .news-wrap {
   display: flex;
