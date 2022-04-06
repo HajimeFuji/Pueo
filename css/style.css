@@ -402,7 +402,7 @@ th {
   background-color: #FFFFFF;
   height: 100vh;
   width: 160px;
-  padding: 64px 0;
+  padding: 32px 0;
   display: flex;
   flex-flow: column;
   justify-content: space-between;
@@ -803,7 +803,7 @@ li {
   .main-visual {
     position: relative;
     top: 60px;
-    height: 40vh;
+    height: 60vh;
     width: 100%;
     margin-bottom: 150px;
   }
@@ -817,7 +817,7 @@ li {
   .pueo {
     max-width: initial;
     width: 100%;
-    padding: 60px 20px 0 20px;
+    padding: 40px 20px 0 20px;
   }
 }
 .pueo .section-headline {
@@ -825,7 +825,8 @@ li {
 }
 .pueo-wrap {
   display: flex;
-  margin: 32px auto;
+  justify-content: space-around;
+  margin: 54px auto 0;
 }
 @media screen and (max-width:599px) {
   .pueo-wrap {
@@ -845,14 +846,17 @@ li {
     padding: initial;
     line-height: 1.8;
     font-size: 12px;
+    margin-bottom: 10px;
   }
 }
 .pueo-wrap__content {
-  width: 50%;
+  width: 40%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 @media screen and (max-width:599px) {
   .pueo-wrap__content {
     width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   }
 }
 .pueo-wrap__content__img {
@@ -869,75 +873,6 @@ li {
 @media screen and (max-width:599px) {
   .pueo .btn {
     margin: 0 auto;
-  }
-}
-
-.recommend .section-headline {
-  text-align: center;
-}
-.recommend-wrap {
-  max-width: calc(100vw - 200px);
-  margin: 54px auto 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  row-gap: 36px;
-}
-@media screen and (max-width:1100px) {
-  .recommend-wrap {
-    max-width: initial;
-    margin: 32px auto 0;
-    padding: 0 20px;
-    row-gap: 24px;
-  }
-  .recommend-wrap .article {
-    width: 49%;
-  }
-}
-.recommend-content .img-box {
-  background-color: #6E551B;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-  overflow: hidden;
-}
-@media screen and (max-width:599px) {
-  .recommend-content .img-box {
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    height: initial;
-    width: 100%;
-  }
-}
-.recommend-content__img {
-  width: 480px;
-  height: 320px;
-  display: inline-block;
-  transition: all 0.8s ease;
-}
-.recommend-content__img:hover {
-  transform: scale(1.2);
-  opacity: 0.6;
-}
-@media screen and (max-width:599px) {
-  .recommend-content__img {
-    height: initial;
-    width: 100%;
-  }
-}
-.recommend-content__title {
-  font-family: "Noto Serif JP";
-  font-weight: bold;
-  margin: 8px 0;
-}
-.recommend-content__price {
-  font-family: "Noto Serif JP";
-}
-.recommend .btn {
-  margin-top: 72px;
-  margin-right: auto;
-  margin-left: auto;
-}
-@media screen and (max-width:599px) {
-  .recommend .btn {
-    margin-top: 32px;
   }
 }
 
@@ -1112,6 +1047,75 @@ li {
 @media screen and (max-width:599px) {
   .concept2__text {
     line-height: 1.8;
+  }
+}
+
+.recommend .section-headline {
+  text-align: center;
+}
+.recommend-wrap {
+  max-width: calc(100vw - 200px);
+  margin: 54px auto 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 36px;
+}
+@media screen and (max-width:1100px) {
+  .recommend-wrap {
+    max-width: initial;
+    margin: 32px auto 0;
+    padding: 0 20px;
+    row-gap: 24px;
+  }
+  .recommend-wrap .article {
+    width: 49%;
+  }
+}
+.recommend-content .img-box {
+  background-color: #6E551B;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+@media screen and (max-width:599px) {
+  .recommend-content .img-box {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    height: initial;
+    width: 100%;
+  }
+}
+.recommend-content__img {
+  width: 480px;
+  height: 320px;
+  display: inline-block;
+  transition: all 0.8s ease;
+}
+.recommend-content__img:hover {
+  transform: scale(1.2);
+  opacity: 0.6;
+}
+@media screen and (max-width:599px) {
+  .recommend-content__img {
+    height: initial;
+    width: 100%;
+  }
+}
+.recommend-content__title {
+  font-family: "Noto Serif JP";
+  font-weight: bold;
+  margin: 8px 0;
+}
+.recommend-content__price {
+  font-family: "Noto Serif JP";
+}
+.recommend .btn {
+  margin-top: 72px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media screen and (max-width:599px) {
+  .recommend .btn {
+    margin-top: 32px;
   }
 }
 
@@ -1418,6 +1422,36 @@ li {
     line-height: 1.8;
   }
 }
+.eachProduct-content .jact-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 32px;
+}
+@media screen and (max-width:599px) {
+  .eachProduct-content .jact-box {
+    padding-top: 16px;
+  }
+}
+.eachProduct-content .jact-box__img {
+  width: 81px;
+  height: 71px;
+}
+@media screen and (max-width:599px) {
+  .eachProduct-content .jact-box__img {
+    width: 40px;
+    height: 35px;
+  }
+}
+.eachProduct-content .jact-box__img2 {
+  height: 40px;
+  margin-left: 10px;
+}
+@media screen and (max-width:599px) {
+  .eachProduct-content .jact-box__img2 {
+    height: 20px;
+  }
+}
 .eachProduct .btn {
   margin-left: auto;
 }
@@ -1427,176 +1461,57 @@ li {
   }
 }
 
-.contactForm {
-  width: calc(100vw - 160px);
-  max-width: initial;
+.hitorigoto {
+  max-width: calc(100vw - 160px);
+  padding-top: 92px;
 }
 @media screen and (max-width:599px) {
-  .contactForm {
-    width: 100vw;
-  }
-}
-.contactForm-wrap {
-  display: flex;
-  height: initial;
-}
-@media screen and (max-width:599px) {
-  .contactForm-wrap {
-    display: initial;
-  }
-}
-.contactForm__img {
-  background: url(../img_for_Pueo/foot_2_.jpg) center center no-repeat;
-  background-size: cover;
-  width: 50%;
-  height: calc((100vw - 160px) / 2 / 6 * 7.7);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-@media screen and (max-width:599px) {
-  .contactForm__img {
-    position: relative;
-    top: 30px;
-    height: 50vh;
+  .hitorigoto {
+    max-width: initial;
     width: 100%;
+    padding: 40px 20px 0 20px;
   }
 }
-.contactForm .section-headline {
-  color: #FFFFFF;
+.hitorigoto .section-headline {
   text-align: center;
 }
-.contactForm .section-headline__sub {
-  color: #FFFFFF;
-}
-.contactForm .section-headline__main {
-  color: #FFFFFF;
-}
-.contactForm-content {
-  width: 50%;
-  padding-top: 32px;
-  padding-bottom: 288px;
+.hitorigoto-wrap {
+  display: flex;
+  justify-content: space-around;
+  margin: 54px auto 0;
 }
 @media screen and (max-width:599px) {
-  .contactForm-content {
+  .hitorigoto-wrap {
+    display: block;
     width: 100%;
-    padding-top: 32px;
-    padding-bottom: 96px;
+    margin-top: 16px;
   }
 }
-.contactForm-content__text {
-  text-align: center;
-  font-family: "Noto sans JP";
-  font-size: 16px;
-  font-weight: bold;
+.hitorigoto-wrap__text {
+  width: 50%;
+  padding: 0 20px;
   line-height: 2;
-  margin-bottom: 64px;
 }
 @media screen and (max-width:599px) {
-  .contactForm-content__text {
-    font-size: 12px;
+  .hitorigoto-wrap__text {
+    width: 100%;
+    padding: initial;
     line-height: 1.8;
-    margin-bottom: 32px;
+    font-size: 12px;
+    margin-top: 10px;
   }
 }
-.contactForm-content .Form-wrap {
-  width: 80%;
-  margin: 0 auto;
-}
-.contactForm-content .Form-wrap .Form-Item {
-  margin-bottom: 24px;
-  display: flex;
-  justify-content: space-between;
+.hitorigoto-wrap__content {
+  width: 40%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 @media screen and (max-width:599px) {
-  .contactForm-content .Form-wrap .Form-Item {
-    flex-flow: column;
-    margin-bottom: 28px;
-  }
-}
-.contactForm-content .Form-wrap .Form-Item-Label {
-  margin-top: 0px;
-  font-family: "Noto sans JP";
-  font-size: 14px;
-}
-@media screen and (max-width:599px) {
-  .contactForm-content .Form-wrap .Form-Item-Label {
-    margin-bottom: 4px;
-  }
-}
-.contactForm-content .Form-wrap .Form-Item-Label__sub {
-  color: #FF0000;
-}
-.contactForm-content .Form-wrap .Form-Item-Label-isMsg {
-  margin-top: 8px;
-  margin-bottom: auto;
-  font-family: "Noto sans JP";
-}
-@media screen and (max-width:599px) {
-  .contactForm-content .Form-wrap .Form-Item-Label-isMsg {
-    margin-top: 0;
-    margin-bottom: 4px;
-    font-family: "Noto sans JP";
-  }
-}
-.contactForm-content .Form-wrap .Form-Item-Input {
-  border-radius: 2px;
-  height: 28px;
-  width: 70%;
-  background: #E0E0E0;
-}
-@media screen and (max-width:599px) {
-  .contactForm-content .Form-wrap .Form-Item-Input {
+  .hitorigoto-wrap__content {
     width: 100%;
-    height: 32px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   }
 }
-.contactForm-content .Form-wrap .Form-Item-Textarea {
-  border-radius: 2px;
-  height: 168px;
-  width: 70%;
-  background: #E0E0E0;
-}
-@media screen and (max-width:599px) {
-  .contactForm-content .Form-wrap .Form-Item-Textarea {
-    width: 100%;
-  }
-}
-.contactForm-content .Form-wrap .form-button {
-  width: 70%;
-  margin-left: auto;
-  margin-top: 72px;
-}
-@media screen and (max-width:599px) {
-  .contactForm-content .Form-wrap .form-button {
-    margin-left: initial;
-    margin: 0 auto;
-    margin-top: 32px;
-  }
-}
-.contactForm-content .Form-wrap .btn {
-  position: relative;
-  top: initial;
-  left: initial;
-  margin: 0 auto;
-}
-
-.alert-wrap {
-  text-align: center;
-  margin-bottom: 32px;
-}
-
-.alert-message {
-  color: #FF0000;
-  font-size: 14px;
-}
-
-.message {
-  color: #6E551B;
-  font-family: "Noto sans JP";
-  font-size: 14px;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 32px;
+.hitorigoto-wrap__content__img {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
