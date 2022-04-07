@@ -411,6 +411,11 @@ th {
   position: sticky;
   top: 0;
 }
+@media screen and (max-width:1100px) {
+  .header {
+    height: 80vh;
+  }
+}
 .header__logo img {
   width: 100px;
 }
@@ -490,7 +495,7 @@ th {
   justify-content: center;
   -moz-column-gap: 28px;
        column-gap: 28px;
-  margin-bottom: 14px;
+  margin-bottom: 28px;
 }
 @media screen and (max-width:599px) {
   .footer-nav {
@@ -520,7 +525,7 @@ th {
   }
 }
 .footer-mail {
-  margin-right: 36px;
+  margin-right: 18px;
 }
 .footer-mail__icon {
   margin-right: 8px;
@@ -1196,7 +1201,7 @@ li {
 }
 @media screen and (max-width:1100px) {
   .contact {
-    max-width: 800px;
+    max-width: 900px;
   }
 }
 @media screen and (max-width:599px) {
@@ -1208,17 +1213,18 @@ li {
 }
 .contact-wrap {
   height: 468px;
+  margin-top: 54px;
   position: relative;
 }
 @media screen and (max-width:1100px) {
   .contact-wrap {
     height: 360px;
+    margin-top: 32px;
   }
 }
 @media screen and (max-width:599px) {
   .contact-wrap {
     height: initial;
-    margin-top: 32px;
   }
 }
 .contact-wrap::after {
@@ -1234,6 +1240,7 @@ li {
 @media screen and (max-width:1100px) {
   .contact-wrap::after {
     height: 300px;
+    aspect-ratio: 4/3;
   }
 }
 @media screen and (max-width:599px) {
@@ -1260,24 +1267,15 @@ li {
 }
 .contact-content {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 0;
+  width: 48%;
 }
 @media screen and (max-width:599px) {
   .contact-content {
     position: initial;
+    width: initial;
     transform: initial;
     margin-top: 72px;
-  }
-}
-.contact__headline {
-  font-weight: bold;
-  margin-bottom: 28px;
-}
-@media screen and (max-width:599px) {
-  .contact__headline {
-    font-family: "Noto Serif JP";
-    margin-bottom: 20px;
   }
 }
 .contact__text {
@@ -1287,12 +1285,26 @@ li {
 @media screen and (max-width:599px) {
   .contact__text {
     line-height: 1.8;
+    font-size: 12px;
+  }
+}
+.contact-links {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width:599px) {
+  .contact-links {
+    display: block;
+  }
+}
+@media screen and (max-width:599px) {
+  .contact-links .sns-link {
+    justify-content: center;
+    margin-top: 16px;
   }
 }
 .contact .btn {
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  margin-right: 32px;
 }
 @media screen and (max-width:599px) {
   .contact .btn {

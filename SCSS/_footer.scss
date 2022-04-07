@@ -28,7 +28,7 @@
         flex-wrap: wrap;
         justify-content: center;
         column-gap: 28px;
-        margin-bottom: 14px;
+        margin-bottom: 28px;
 
         @include mq(sp){
             margin-bottom: 28px;
@@ -55,7 +55,7 @@
         }
     }
     &-mail {
-        margin-right: 36px;
+        margin-right: 18px;
         &__icon {
             margin-right: 8px;
         }

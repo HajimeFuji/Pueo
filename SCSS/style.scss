@@ -412,7 +412,7 @@
     margin: 0 auto;
 
     @include mq(tab) {
-        max-width: 800px;
+        max-width: 900px;
     }
 
     @include mq(sp){
@@ -423,15 +423,16 @@
 
     &-wrap {
         height: 468px;
+        margin-top: 54px;
         position: relative;
 
         @include mq(tab) {
             height: 360px;
+            margin-top: 32px;
         }
 
         @include mq(sp){
             height: initial;
-            margin-top: 32px;
         }
 
         &::after {
@@ -446,6 +447,7 @@
 
             @include mq(tab) {
                 height: 300px;
+                aspect-ratio: 4 / 3;
             }
 
             @include mq(sp){
@@ -472,22 +474,14 @@
     }
     &-content {
         position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-
+        top: 0;
+        width: 48%;
+        // transform: translateY(-50%);
         @include mq(sp){
             position: initial;
+            width: initial;
             transform: initial;
             margin-top: 72px;
-        }
-    }
-    &__headline {
-        font-weight: bold;
-        margin-bottom: 28px;
-
-        @include mq(sp){
-            font-family: $serif;
-            margin-bottom: 20px;
         }
     }
     &__text {
@@ -496,14 +490,25 @@
 
         @include mq(sp){
             line-height: 1.8;
+            font-size: 12px;
         }
     }
 
+    &-links {
+        display: flex;
+        align-items: center;
+        @include mq(sp) {
+            display: block;
+        }
+        .sns-link {
+            @include mq(sp) {
+                justify-content: center;
+                margin-top: 16px;
+            }
+        }
+    }
     .btn {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-
+        margin-right: 32px;
         @include mq(sp){
             position: relative;
             // btn 自体に疑似要素が使われているので initial にしてはいけない

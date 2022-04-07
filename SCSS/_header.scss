@@ -15,6 +15,9 @@
     // position: fixed;
     // fixed: フッターなどにかぶる
     // sticky: 親要素の中だけで効く
+    @include mq(tab) {
+        height: 80vh;
+    }
 
     &__logo img {
         width: 100px;
