@@ -30,7 +30,7 @@
     @include mq(sp){
         position: relative;
         top: 60px;
-        height: 60vh;
+        height: 48vh;
         width: 100%;
         margin-bottom: 150px;
     }
@@ -42,7 +42,7 @@
     @include mq(sp){
         max-width: initial;
         width: 100%;
-        padding: 40px 20px 0 20px;
+        padding: 0 20px;
     }
 
     .section-headline {
@@ -84,13 +84,6 @@
                     width: 100%;
                 }
             }
-        }
-    }
-    .btn {
-        margin: 48px auto;
-
-        @include mq(sp){
-            margin: 0 auto;
         }
     }
 }
@@ -346,7 +339,7 @@
     padding: 54px 0;
 
     @include mq(sp){
-        padding: 36px 0;
+        padding: initial;
     }
 
     .section-headline {
@@ -529,7 +522,7 @@
     }
 
     @include mq(sp){
-        margin-bottom: 96px;
+        margin-bottom: 36px;
     }
 }
 

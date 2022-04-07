@@ -1,4 +1,5 @@
 @use "variables" as *;
+@use "mixin" as *;
 
 .section-headline {
     &__sub {
@@ -10,7 +11,11 @@
     &__main {
         color: $main;
         font-weight: bold;
-        padding-top: 32px;
+        padding-top: 40px;
+
+        @include mq(sp) {
+            padding-top: 100px;
+        }
     }
 }
 
