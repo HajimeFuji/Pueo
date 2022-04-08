@@ -533,12 +533,12 @@ th {
 .footer-mail__link {
   font-size: 14px;
 }
-.footer .privacy-policy {
+.footer .policy {
   margin-bottom: 32px;
   font-family: "Noto sans JP";
 }
 @media screen and (max-width:599px) {
-  .footer .privacy-policy {
+  .footer .policy {
     font-size: 12px;
     margin-bottom: 16px;
   }
