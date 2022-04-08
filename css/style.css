@@ -813,8 +813,9 @@ li {
   .main-visual {
     position: relative;
     top: 60px;
-    height: 48vh;
     width: 100%;
+    height: initial;
+    aspect-ratio: 3/2;
     margin-bottom: 96px;
   }
 }
@@ -1296,6 +1297,7 @@ li {
 .contact-links {
   display: flex;
   align-items: center;
+  padding-top: 16px;
 }
 @media screen and (max-width:599px) {
   .contact-links {

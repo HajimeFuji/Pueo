@@ -30,8 +30,10 @@
     @include mq(sp){
         position: relative;
         top: 60px;
-        height: 48vh;
+        // height: 48vh;
         width: 100%;
+        height: initial;
+        aspect-ratio: 3 / 2;
         margin-bottom: 96px;
     }
 }
@@ -501,6 +503,7 @@
     &-links {
         display: flex;
         align-items: center;
+        padding-top: 16px;
         @include mq(sp) {
             display: block;
         }
