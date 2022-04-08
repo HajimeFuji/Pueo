@@ -12,7 +12,7 @@ $(function () {
         animationDuration: 8000,
     slides: [
         { src: "./img_for_Pueo/Pueo_main_1-1.jpg" },
-        { src: "./img_for_Pueo/beach_stone.JPG" },
+        { src: "./img_for_Pueo/beach_stone.jpg" },
         { src: "./img_for_Pueo/relax_3_m.jpg" },
         ]
     });

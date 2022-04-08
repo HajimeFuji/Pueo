@@ -64,6 +64,15 @@
         }
     }
 
+    .privacy-policy {
+        margin-bottom: 32px;
+        font-family: $sans;
+        @include mq(sp) {
+            font-size: 12px;
+            margin-bottom: 16px;
+        }
+    }
+
     .information {
         margin-bottom: 80px;
 
