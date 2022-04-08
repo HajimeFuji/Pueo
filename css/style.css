@@ -452,7 +452,7 @@ th {
     z-index: 2;
   }
   .sp-header__logo {
-    width: 80px;
+    width: 100px;
   }
   .sp-header .hamberger {
     display: flex;
@@ -815,7 +815,7 @@ li {
     top: 60px;
     height: 48vh;
     width: 100%;
-    margin-bottom: 150px;
+    margin-bottom: 96px;
   }
 }
 
@@ -899,7 +899,7 @@ li {
 }
 @media screen and (max-width:1100px) {
   .concept1 {
-    height: 350px;
+    height: 380px;
   }
 }
 @media screen and (max-width:599px) {
@@ -1124,15 +1124,21 @@ li {
 .news {
   background: url(../img_for_Pueo/bg_for_news.jpg) center center no-repeat;
   background-size: cover;
-  padding: 54px 0;
+  padding-top: 54px;
 }
 @media screen and (max-width:599px) {
   .news {
     padding: initial;
+    margin-top: 100px;
   }
 }
 .news .section-headline {
   text-align: center;
+}
+@media screen and (max-width:599px) {
+  .news .section-headline__main {
+    padding-top: 40px;
+  }
 }
 .news-wrap {
   display: flex;
@@ -1145,15 +1151,15 @@ li {
   .news-wrap {
     display: block;
     max-width: 288px;
-    margin: 32px auto 0;
+    margin: 24px auto 0;
   }
 }
 .news-content {
-  margin-bottom: 36px;
+  padding-bottom: 36px;
 }
 @media screen and (max-width:599px) {
   .news-content {
-    margin-bottom: 24px;
+    padding-bottom: 24px;
   }
 }
 .news-content__date {
@@ -1171,6 +1177,18 @@ li {
   font-family: "Noto sans JP";
   margin-bottom: 8px;
 }
+.news-content__title a:link {
+  color: #0000ff;
+}
+.news-content__title a:visited {
+  color: #000080;
+}
+.news-content__title a:hover {
+  color: #ff0000;
+}
+.news-content__title a:active {
+  color: #ff8000;
+}
 @media screen and (max-width:599px) {
   .news-content__title {
     margin-bottom: 4px;
@@ -1180,16 +1198,6 @@ li {
   background-color: #323232;
   height: 1px;
   width: 288px;
-}
-.news .btn {
-  margin-top: 28px;
-  margin-right: auto;
-  margin-left: auto;
-}
-@media screen and (max-width:599px) {
-  .news .btn {
-    margin-top: 32px;
-  }
 }
 
 .contact {
@@ -1428,35 +1436,47 @@ li {
     line-height: 1.8;
   }
 }
-.eachProduct-content .jact-box {
+.eachProduct-content .jact-link {
+  display: block;
+}
+.eachProduct-content .jact-link .jact-box {
   display: flex;
   align-items: center;
   justify-content: center;
   padding-top: 32px;
 }
 @media screen and (max-width:599px) {
-  .eachProduct-content .jact-box {
+  .eachProduct-content .jact-link .jact-box {
     padding-top: 16px;
   }
 }
-.eachProduct-content .jact-box__img {
+.eachProduct-content .jact-link .jact-box__img {
   width: 81px;
   height: 71px;
 }
 @media screen and (max-width:599px) {
-  .eachProduct-content .jact-box__img {
+  .eachProduct-content .jact-link .jact-box__img {
     width: 40px;
     height: 35px;
   }
 }
-.eachProduct-content .jact-box__img2 {
+.eachProduct-content .jact-link .jact-box__img2 {
   height: 40px;
+  width: 300px;
   margin-left: 10px;
 }
 @media screen and (max-width:599px) {
-  .eachProduct-content .jact-box__img2 {
+  .eachProduct-content .jact-link .jact-box__img2 {
     height: 20px;
   }
+}
+.eachProduct-content .jact-link img {
+  transition: 0.3s;
+  display: block;
+  width: 100%;
+}
+.eachProduct-content .jact-link:hover img {
+  opacity: 0.5;
 }
 .eachProduct .btn {
   margin-left: auto;

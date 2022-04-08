@@ -32,7 +32,7 @@
         top: 60px;
         height: 48vh;
         width: 100%;
-        margin-bottom: 150px;
+        margin-bottom: 96px;
     }
 }
 
@@ -110,7 +110,7 @@
         // Concept2 との間隔 90px
 
         @include mq(tab) {
-            height: 350px;
+            height: 380px;
         }
 
         @include mq(sp){
@@ -336,14 +336,21 @@
 .news {
     background: url(../img_for_Pueo/bg_for_news.jpg) center center no-repeat;
     background-size: cover;
-    padding: 54px 0;
+    padding-top: 54px;
+    // margin-top: 100px;
 
     @include mq(sp){
         padding: initial;
+        margin-top: 100px;
     }
 
     .section-headline {
         text-align: center;
+        &__main {
+            @include mq(sp) {
+                padding-top: 40px;
+            }
+        }
     }
     &-wrap {
         display: flex;
@@ -356,15 +363,15 @@
             display: block;
             // flex box解除　⇒　block要素には必ず横幅を指定する
             max-width: 288px;
-            margin: 32px auto 0;
+            margin: 24px auto 0;
         }
 
     }
     &-content {
-        margin-bottom: 36px;
+        padding-bottom: 36px;
 
         @include mq(sp){
-            margin-bottom: 24px;
+            padding-bottom: 24px;
         }
 
         &__date {
@@ -379,6 +386,10 @@
         &__title {
             font-family: $sans;
             margin-bottom: 8px;
+            a:link { color: #0000ff; }
+            a:visited { color: #000080; }
+            a:hover { color: #ff0000; }
+            a:active { color: #ff8000; }
             @include mq(sp){
                 margin-bottom: 4px;
             }
@@ -389,15 +400,15 @@
             width: 288px;
         }
     }
-    .btn {
-        margin-top: 28px;
-        margin-right: auto;
-        margin-left: auto;
+    // .btn {
+    //     margin-top: 28px;
+    //     margin-right: auto;
+    //     margin-left: auto;
 
-        @include mq(sp){
-            margin-top: 32px;
-        }
-    }
+    //     @include mq(sp){
+    //         margin-top: 32px;
+    //     }
+    // }
 }
 
 .contact {
@@ -609,29 +620,41 @@
                 line-height: 1.8;
             }
         }
-        .jact-box {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding-top: 32px;
-            @include mq(sp) {
-                padding-top: 16px;
-            }
-            &__img {
-                width: 81px;
-                height: 71px;
+        .jact-link{
+            display:block;
+            .jact-box {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding-top: 32px;
                 @include mq(sp) {
-                    width: 40px;
-                    height: 35px;
+                    padding-top: 16px;
+                }
+                &__img {
+                    width: 81px;
+                    height: 71px;
+                    @include mq(sp) {
+                        width: 40px;
+                        height: 35px;
+                    }
+                }
+                &__img2 {
+                    height: 40px;
+                    width: 300px;
+                    margin-left: 10px;
+                    @include mq(sp) {
+                        height: 20px;
+                    }
                 }
             }
-            &__img2 {
-                height: 40px;
-                margin-left: 10px;
-                @include mq(sp) {
-                    height: 20px;
-                }
-            }
+        }
+        .jact-link img{
+            transition:0.3s;
+            display:block;
+            width:100%;
+        }
+        .jact-link:hover img{
+            opacity:0.5;
         }
     }
 
