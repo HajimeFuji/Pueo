@@ -1456,7 +1456,6 @@ li {
 }
 .eachProduct-content__link {
   font-family: "Noto sans JP";
-  font-weight: bold;
   padding-top: 32px;
   margin-bottom: 16px;
   text-align: right;
@@ -1469,6 +1468,7 @@ li {
 }
 .eachProduct-content__link a:hover {
   color: #ff0000;
+  text-decoration: underline;
 }
 .eachProduct-content__link a:active {
   color: #ff8000;
@@ -1533,9 +1533,6 @@ li {
   .eachProduct .contact-links {
     display: block;
   }
-}
-.eachProduct .contact-links .sns-link {
-  padding-left: 32px;
 }
 @media screen and (max-width:599px) {
   .eachProduct .contact-links .sns-link {
@@ -1631,53 +1628,6 @@ li {
 .hitorigoto-wrap__content__img {
   width: 100%;
 }
-.hitorigoto-wrap2 {
-  display: flex;
-  justify-content: space-around;
-  margin: 54px auto 0;
-}
-.hitorigoto-wrap2__head {
-  padding-top: 16px;
-}
-.hitorigoto-wrap2 .text-end {
-  text-align: right;
-  font-size: 16px;
-}
-@media screen and (max-width:599px) {
-  .hitorigoto-wrap2 {
-    display: block;
-    width: 100%;
-    margin-top: 16px;
-  }
-}
-.hitorigoto-wrap2__text {
-  width: 50%;
-  padding: 0 20px;
-  line-height: 2;
-}
-@media screen and (max-width:599px) {
-  .hitorigoto-wrap2__text {
-    width: 100%;
-    padding: initial;
-    line-height: 1.8;
-    font-size: 12px;
-    margin-top: 10px;
-  }
-}
-.hitorigoto-wrap2__text2 {
-  width: 100%;
-  padding: 0 20px;
-  line-height: 2;
-}
-@media screen and (max-width:599px) {
-  .hitorigoto-wrap2__text2 {
-    width: 100%;
-    padding: initial;
-    line-height: 1.8;
-    font-size: 12px;
-    margin-top: 10px;
-  }
-}
 
 .privacy .section-headline {
   text-align: center;
@@ -1700,7 +1650,7 @@ li {
 }
 .privacy-wrap__text {
   width: 100%;
-  padding: 0 20px;
+  padding: 0 40px;
   line-height: 2;
 }
 @media screen and (max-width:599px) {

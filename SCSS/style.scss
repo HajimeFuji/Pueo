@@ -630,13 +630,16 @@
         }
         &__link {
             font-family: $sans;
-            font-weight: bold;
+            // font-weight: bold;
             padding-top: 32px;
             margin-bottom: 16px;
             text-align: right;
             a:link { color: #0000ff; }
             a:visited { color: #000080; }
-            a:hover { color: #ff0000; }
+            a:hover { 
+                color: #ff0000; 
+                text-decoration: underline;
+            }
             a:active { color: #ff8000; }
             @include mq(sp) {
                 text-align: center;
@@ -692,7 +695,7 @@
             display: block;
         }
         .sns-link {
-            padding-left: 32px;
+            // padding-left: 32px;
             @include mq(sp) {
                 justify-content: center;
                 margin-top: 16px;
@@ -784,55 +787,6 @@
             }
         }
     }
-    &-wrap2 {
-        display: flex;
-        justify-content: space-around;
-        margin: 54px auto 0;
-        &__head {
-            padding-top: 16px;
-        }
-    
-        .text-end {
-            text-align: right;
-            font-size: 16px;
-        }
-        @include mq(sp){
-            display: block;
-            width: 100%;
-            margin-top: 16px;
-        }
-        &__text {
-            width: 50%;
-            padding: 0 20px;
-            line-height: 2;
-            @include mq(sp) {
-                width: 100%;
-                padding: initial;
-                line-height: 1.8;
-                font-size: 12px;
-                margin-top: 10px;
-            }
-        }
-        &__text2 {
-            width: 100%;
-            padding: 0 20px;
-            line-height: 2;
-            @include mq(sp) {
-                width: 100%;
-                padding: initial;
-                line-height: 1.8;
-                font-size: 12px;
-                margin-top: 10px;
-            }
-        }
-    }
-    // .btn {
-    //     margin: 48px auto;
-
-    //     @include mq(sp){
-    //         margin: 0 auto;
-    //     }
-    // }
 }
 .privacy {
     .section-headline {
@@ -858,7 +812,7 @@
         }
         &__text {
             width: 100%;
-            padding: 0 20px;
+            padding: 0 40px;
             line-height: 2;
             @include mq(sp) {
                 width: 100%;
