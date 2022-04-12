@@ -1468,7 +1468,6 @@ li {
 }
 .eachProduct-content__link a:hover {
   color: #ff0000;
-  text-decoration: underline;
 }
 .eachProduct-content__link a:active {
   color: #ff8000;
