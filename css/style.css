@@ -1422,6 +1422,18 @@ li {
     font-size: 20px;
   }
 }
+.eachProduct-content__title2 {
+  font-family: "Noto Serif JP";
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  margin-top: 40px;
+}
+@media screen and (max-width:599px) {
+  .eachProduct-content__title2 {
+    font-size: 20px;
+  }
+}
 .eachProduct-content__price {
   font-family: "Noto Serif JP";
   font-size: 24px;

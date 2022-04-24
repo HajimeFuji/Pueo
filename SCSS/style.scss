@@ -599,6 +599,16 @@
                 font-size: 20px;
             }
         }
+        &__title2 {
+            font-family: $serif;
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 8px;
+            margin-top: 40px;
+            @include mq(sp){
+                font-size: 20px;
+            }
+        }
         &__price {
             font-family: $serif;
             font-size: 24px;
