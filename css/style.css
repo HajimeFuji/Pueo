@@ -717,6 +717,7 @@ li {
 @media screen and (max-width:599px) {
   h2 {
     font-size: 24px;
+    line-height: 24px;
   }
 
   h3 {
@@ -1579,6 +1580,19 @@ li {
 .hitorigoto .section-headline {
   text-align: center;
 }
+.hitorigoto .hitorigoto-headline {
+  text-align: center;
+}
+.hitorigoto .hitorigoto-headline__main {
+  color: #6E551B;
+  font-weight: bold;
+  padding-top: 80px;
+}
+@media screen and (max-width:599px) {
+  .hitorigoto .hitorigoto-headline__main {
+    padding-top: 100px;
+  }
+}
 .hitorigoto-wrap {
   display: flex;
   justify-content: space-around;
@@ -1613,7 +1627,7 @@ li {
   }
 }
 .hitorigoto-wrap__text2 {
-  width: 1000%;
+  width: 75%;
   padding: 0 20px;
   line-height: 2;
 }
