@@ -741,6 +741,19 @@
         text-align: center;
     }
 
+    .hitorigoto-headline {
+        text-align: center;
+        &__main {
+            color: $main;
+            font-weight: bold;
+            padding-top: 80px;
+    
+            @include mq(sp) {
+                padding-top: 100px;
+            }
+        }
+    }
+
     &-wrap {
         display: flex;
         justify-content: space-around;
@@ -771,7 +784,7 @@
             }
         }
         &__text2 {
-            width: 1000%;
+            width: 75%;
             padding: 0 20px;
             line-height: 2;
             @include mq(sp) {
