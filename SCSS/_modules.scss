@@ -12,7 +12,6 @@
         color: $main;
         font-weight: bold;
         padding-top: 40px;
-
         @include mq(sp) {
             padding-top: 100px;
         }
