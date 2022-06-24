@@ -846,3 +846,22 @@
         }
     }
 }
+
+.new::after {
+    display        : inline-block;       /* インラインボックス定義  */
+    content        : "NEW";              /* 表示する文字            */
+    color          : #ff0000;            /* 文字色                  */
+    font-size      : 7pt;                /* ベースの文字サイズ      */
+    vertical-align : top;             /* 基準の高さ位置          */
+    margin-left    : 5px;                /* 左外余白                */
+    text-shadow    : 2px 2px 2px #ffff00;/* 文字影                  */
+}
+// .sample1a >  div:nth-child(2)::after {
+//     display        : inline-block;       /* インラインボックス定義  */
+//     content        : "NEW";              /* 表示する文字            */
+//     color          : #ff0000;            /* 文字色                  */
+//     font-size      : 7pt;                /* ベースの文字サイズ      */
+//     vertical-align : middle;             /* 基準の高さ位置          */
+//     margin-left    : 5px;                /* 左外余白                */
+//     text-shadow    : 2px 2px 2px #ffff00;/* 文字影                  */
+// }

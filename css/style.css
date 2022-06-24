@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! destyle.css v3.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */
 /* Reset box-model and set borders */
 /* ============================================ */
@@ -1686,5 +1687,22 @@ li {
     font-size: 12px;
     margin-top: 10px;
   }
+}
+
+.new::after {
+  display: inline-block;
+  /* インラインボックス定義  */
+  content: "NEW";
+  /* 表示する文字            */
+  color: #ff0000;
+  /* 文字色                  */
+  font-size: 7pt;
+  /* ベースの文字サイズ      */
+  vertical-align: top;
+  /* 基準の高さ位置          */
+  margin-left: 5px;
+  /* 左外余白                */
+  text-shadow: 2px 2px 2px #ffff00;
+  /* 文字影                  */
 }
 /*# sourceMappingURL=style.css.map */
