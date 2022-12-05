@@ -250,13 +250,27 @@
             }
         }
         &__text {
-            font-family: $sans;
+            font-family: $serif;
+            font-weight: bold;
             line-height: 2;
-            @include mq(sp){
-                line-height: 1.8;
+            &__sub {
+                font-size: 12px;
+                text-align: right;
+                line-height: 2;
+                @include mq(sp){
+                    font-size: 10px;
+                }
+            }
+            &__sub2 {
+                font-family: $sans;
+                line-height: 2;
+                margin-top: 24px;
+                @include mq(sp){
+                    line-height: 2;
                 }
             }
         }
+    }
 }
 
 .recommend {
@@ -376,6 +390,7 @@
     }
     &-content {
         padding-bottom: 36px;
+        line-height: 1.5;
 
         @include mq(sp){
             padding-bottom: 24px;
@@ -847,13 +862,13 @@
     }
 }
 
-.new::after {
+.new::before {
     display        : inline-block;       /* インラインボックス定義  */
     content        : "NEW";              /* 表示する文字            */
     color          : #ff0000;            /* 文字色                  */
     font-size      : 7pt;                /* ベースの文字サイズ      */
     vertical-align : top;             /* 基準の高さ位置          */
-    margin-left    : 5px;                /* 左外余白                */
+    margin-right   : 5px;                /* 左外余白                */
     text-shadow    : 2px 2px 2px #ffff00;/* 文字影                  */
 }
 // .sample1a >  div:nth-child(2)::after {

@@ -18,12 +18,9 @@
  * 3. Remove gray overlay on links for iOS.
  */
 html {
-  line-height: 1.15;
-  /* 1 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
-  -webkit-tap-highlight-color: transparent;
-  /* 3*/
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -webkit-tap-highlight-color: transparent; /* 3*/
 }
 
 /* Sections */
@@ -95,12 +92,9 @@ dd {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  box-sizing: content-box;
-  /* 1 */
-  height: 0;
-  /* 1 */
-  overflow: visible;
-  /* 2 */
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
   border-top-width: 1px;
   margin: 0;
   clear: both;
@@ -112,10 +106,8 @@ hr {
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 pre {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: inherit;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: inherit; /* 2 */
 }
 
 address {
@@ -139,8 +131,7 @@ a {
  */
 abbr[title] {
   -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
-  /* 2 */
+          text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -158,10 +149,8 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: inherit;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: inherit; /* 2 */
 }
 
 /**
@@ -216,8 +205,7 @@ input,
 optgroup,
 select,
 textarea {
-  -webkit-appearance: none;
-  /* 1 */
+  -webkit-appearance: none; /* 1 */
   -moz-appearance: none;
        appearance: none;
   vertical-align: middle;
@@ -228,8 +216,7 @@ textarea {
   margin: 0;
   border-radius: 0;
   text-align: inherit;
-  text-transform: inherit;
-  /* 2 */
+  text-transform: inherit; /* 2 */
 }
 
 /**
@@ -321,8 +308,7 @@ textarea {
  * 1. Correct the outline style in Safari.
  */
 [type=search] {
-  outline-offset: -2px;
-  /* 1 */
+  outline-offset: -2px; /* 1 */
 }
 
 /**
@@ -337,10 +323,8 @@ textarea {
  * 2. Fix font inheritance.
  */
 ::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
 }
 
 /**
@@ -379,8 +363,7 @@ summary {
 1. Correct table border color inheritance in all Chrome and Safari.
 */
 table {
-  border-color: inherit;
-  /* 1 */
+  border-color: inherit; /* 1 */
   border-collapse: collapse;
 }
 
@@ -706,11 +689,9 @@ li {
   h3 {
     font-size: 22px;
   }
-
   p {
     font-size: 14px;
   }
-
   .tab-none {
     display: none;
   }
@@ -720,27 +701,21 @@ li {
     font-size: 24px;
     line-height: 24px;
   }
-
   h3 {
     font-size: 20px;
   }
-
   h4 {
     font-size: 14px;
   }
-
   p {
     font-size: 14px;
   }
-
   span {
     font-size: 12px;
   }
-
   .pc-none {
     display: block;
   }
-
   .mobile-none {
     display: none;
   }
@@ -1062,12 +1037,28 @@ li {
   }
 }
 .concept2__text {
-  font-family: "Noto sans JP";
+  font-family: "Noto Serif JP";
+  font-weight: bold;
+  line-height: 2;
+}
+.concept2__text__sub {
+  font-size: 12px;
+  text-align: right;
   line-height: 2;
 }
 @media screen and (max-width:599px) {
-  .concept2__text {
-    line-height: 1.8;
+  .concept2__text__sub {
+    font-size: 10px;
+  }
+}
+.concept2__text__sub2 {
+  font-family: "Noto sans JP";
+  line-height: 2;
+  margin-top: 24px;
+}
+@media screen and (max-width:599px) {
+  .concept2__text__sub2 {
+    line-height: 2;
   }
 }
 
@@ -1175,6 +1166,7 @@ li {
 }
 .news-content {
   padding-bottom: 36px;
+  line-height: 1.5;
 }
 @media screen and (max-width:599px) {
   .news-content {
@@ -1689,20 +1681,13 @@ li {
   }
 }
 
-.new::after {
-  display: inline-block;
-  /* インラインボックス定義  */
-  content: "NEW";
-  /* 表示する文字            */
-  color: #ff0000;
-  /* 文字色                  */
-  font-size: 7pt;
-  /* ベースの文字サイズ      */
-  vertical-align: top;
-  /* 基準の高さ位置          */
-  margin-left: 5px;
-  /* 左外余白                */
-  text-shadow: 2px 2px 2px #ffff00;
-  /* 文字影                  */
+.new::before {
+  display: inline-block; /* インラインボックス定義  */
+  content: "NEW"; /* 表示する文字            */
+  color: #ff0000; /* 文字色                  */
+  font-size: 7pt; /* ベースの文字サイズ      */
+  vertical-align: top; /* 基準の高さ位置          */
+  margin-right: 5px; /* 左外余白                */
+  text-shadow: 2px 2px 2px #ffff00; /* 文字影                  */
 }
 /*# sourceMappingURL=style.css.map */
