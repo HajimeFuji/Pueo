@@ -591,6 +591,9 @@ th {
   background-color: #323232;
   color: #FFFFFF;
 }
+.sns-link__icon--secondary {
+  background-color: #3ab9b6;
+}
 
 .color-circle {
   border-radius: 50%;
@@ -1186,7 +1189,7 @@ li {
 }
 .news-content__title {
   font-family: "Noto sans JP";
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 }
 .news-content__title a:link {
   color: #0000ff;
